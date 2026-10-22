@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chanthani N R | Software Developer &amp; Data Analytics Specialist</title>
+  <meta name="description" content="Portfolio of Chanthani N R - Software Developer proficient in Next.js, React, JavaScript, Python, PostgreSQL, RBAC architecture, and Data Analytics based in Bengaluru, India.">
+  <meta name="keywords" content="Chanthani N R, Software Developer, Full-Stack Developer, Next.js, React, JavaScript, Python, PostgreSQL, RBAC, Data Analytics, Bengaluru">
+  <meta name="author" content="Chanthani N R">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:title" content="Chanthani N R | Software Developer &amp; Data Analytics Specialist">
+  <meta property="og:description" content="Explore full-stack applications, enterprise RBAC systems, and machine learning pipelines developed by Chanthani N R.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Elements -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="brand-logo" aria-label="Chanthani N R Homepage">
+        <div class="brand-badge">CR</div>
+        <span>Chanthani <span class="text-gradient">N R</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">AI &amp; Tech Stack</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Theme" title="Toggle Theme">
+          <svg class="icon-sun" viewBox="0 0 24 24">
+            <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+
+        <button class="btn btn-primary btn-sm" data-open-resume id="header-resume-btn">
+          <svg class="btn-icon" viewBox="0 0 24 24">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="12" y1="18" x2="12" y2="12"></line>
+            <line x1="9" y1="15" x2="15" y2="15"></line>
+          </svg>
+          <span>Resume</span>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          &#9776;
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>AI-Native Software Builder • Bengaluru &amp; Remote</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting modern applications with <span class="text-gradient">AI-Native Velocity</span>.
+          </h1>
+
+          <h2 class="hero-subtitle">
+            Hi, I'm <strong>Chanthani N R</strong> — <span id="hero-rotating-text" class="text-gradient">AI-Native Software Builder</span>
+          </h2>
+
+          <p class="hero-description">
+            Next-generation developer leveraging AI powerhouses like <strong>Cursor</strong>, <strong>Google Antigravity</strong>, and <strong>OpenAI Codex</strong> to rapidly architect, assemble, and deploy full-stack systems, granular RBAC databases, and machine learning pipelines at 10x speed.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>Explore Projects</span>
+            </a>
+
+            <button class="btn btn-secondary" data-open-resume>
+              <svg class="btn-icon" viewBox="0 0 24 24">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span>View Resume</span>
+            </button>
+
+            <a href="mailto:chanthanirajiraj2003@gmail.com" class="btn btn-outline-cyan">
+              <svg class="btn-icon" viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email Directly</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number text-gradient">AI-Native</span>
+              <span class="stat-label">Cursor &amp; Antigravity</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number text-gradient">10x Speed</span>
+              <span class="stat-label">Rapid Prototyping &amp; Deploy</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number text-gradient">M.Sc.</span>
+              <span class="stat-label">Big Data Analytics</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number text-gradient">6-Role</span>
+              <span class="stat-label">RBAC Security Schemas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Mockup -->
+        <div class="hero-visual">
+          <div class="hero-card-stack">
+            <div class="interactive-preview-card">
+              <div class="code-header">
+                <div class="code-dots">
+                  <span class="code-dot dot-red"></span>
+                  <span class="code-dot dot-yellow"></span>
+                  <span class="code-dot dot-green"></span>
+                </div>
+                <span class="code-filename">builder.config.js</span>
+              </div>
+              <div class="code-body">
+                <div><span class="syntax-keyword">const</span> <span class="syntax-var">builder</span> = {</div>
+                <div>&nbsp;&nbsp;<span class="syntax-property">name:</span> <span class="syntax-string">"Chanthani N R"</span>,</div>
+                <div>&nbsp;&nbsp;<span class="syntax-property">paradigm:</span> <span class="syntax-string">"AI-Native Engineering"</span>,</div>
+                <div>&nbsp;&nbsp;<span class="syntax-property">aiArsenal:</span> [</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax-string">"Cursor IDE"</span>, <span class="syntax-string">"Google Antigravity"</span>,</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax-string">"OpenAI Codex"</span>, <span class="syntax-string">"Agentic Workflows"</span></div>
+                <div>&nbsp;&nbsp;],</div>
+                <div>&nbsp;&nbsp;<span class="syntax-property">coreStrengths:</span> [</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax-string">"Next.js &amp; PostgreSQL"</span>,</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax-string">"6-Role RBAC Schemas"</span>,</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax-string">"Big Data &amp; ML Pipelines"</span></div>
+                <div>&nbsp;&nbsp;],</div>
+                <div>&nbsp;&nbsp;<span class="syntax-property">productionVelocity:</span> <span class="syntax-string">"10x Faster Delivery"</span></div>
+                <div>};</div>
+              </div>
+            </div>
+
+            <!-- Floating Tech Chips -->
+            <div class="floating-chip chip-1">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+              <span>Cursor &amp; Antigravity Powered</span>
+            </div>
+            <div class="floating-chip chip-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+              <span>Systems, RBAC &amp; Data Logic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Development Mindset</span>
+          <h2 class="section-title">The New Era of Software: <span class="text-gradient">AI-Augmented Engineering</span></h2>
+          <p class="section-desc">
+            Rather than getting stuck in manual syntax boilerplate, I harness state-of-the-art AI tools like Cursor, Google Antigravity, and OpenAI Codex to engineer production software with speed, precision, and architectural discipline.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio">
+            <div class="about-profile-header">
+              <div class="about-avatar-ring">
+                <img src="assets/images/chanthani_profile.jpg" alt="Chanthani N R" class="about-avatar-img">
+              </div>
+              <div>
+                <h3 style="font-size: 1.35rem; font-weight: 700;">Chanthani N R</h3>
+                <p style="color: var(--accent-cyan); font-weight: 600; font-size: 0.95rem;">AI-Native Software Builder &amp; Data Analyst</p>
+                <p style="font-size: 0.825rem; color: var(--text-muted);">Bengaluru, India • Sixs Sports Business &amp; Solutions</p>
+              </div>
+            </div>
+            <p>
+              Software development has fundamentally transformed. My focus is on what drives real impact: <strong>architecting relational schemas, formulating precise system specifications, engineering role-based access control (RBAC), and verifying complex business logic</strong> while orchestrating AI coding agents to assemble the stack.
+            </p>
+            <p>
+              Backed by an analytical foundation in <strong>M.Sc. Big Data Analytics, Mathematics, and Physics</strong>, I translate operational requirements from doctors, physiotherapists, and operations managers into working production software at <strong>Sixs Sports Business &amp; Solutions Inc.</strong>
+            </p>
+            <div class="highlight-box">
+              <strong>Supercharged Workflow:</strong> Using Cursor, Google Antigravity, and Codex, I build end-to-end full-stack applications, automate multi-role workflows, and rapidly isolate production incidents across database connections and API gateways.
+            </div>
+          </div>
+
+          <!-- 4 Pillars -->
+          <div class="core-pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="pillar-title">AI-Native Construction</h3>
+              <p class="pillar-desc">
+                Supercharging frontend and backend development with Cursor, Google Antigravity, and Codex for lightning-fast feature assembly and refactoring.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h3 class="pillar-title">System &amp; RBAC Architecture</h3>
+              <p class="pillar-desc">
+                Designing PostgreSQL schemas, Supabase/Firebase security rules, and granular 6-tier role-based access control with session protection.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Data Analytics &amp; ML Rigor</h3>
+              <p class="pillar-desc">
+                Applying quantitative methods, Python, Pandas, EDA, and predictive machine learning models to solve biomedical and operational challenges.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Agentic Debugging &amp; Triage</h3>
+              <p class="pillar-desc">
+                Employing AI code analysis and systematic root-cause diagnosis to resolve tricky database connectivity, networking, and SPA routing issues.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title">Professional <span class="text-gradient">Experience</span></h2>
+          <p class="section-desc">
+            Direct industry track record building operational tools, healthcare applications, and database integrations.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Developer</h3>
+                  <div class="timeline-company">
+                    <span>Sixs Sports Business &amp; Solutions Inc.</span>
+                  </div>
+                </div>
+                <span class="timeline-badge">Mar 2026 – Present</span>
+              </div>
+              <div class="timeline-meta">
+                <span>📍 Bengaluru, India</span>
+                <span>💼 Full-Time</span>
+                <span>⚡ Clinical Tech &amp; Sports Science</span>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li class="timeline-bullet-item">
+                  Develop data-driven applications supporting clinical operations, sports science assessments, scheduling, inventory, and reporting workflows.
+                </li>
+                <li class="timeline-bullet-item">
+                  Build application features and database integrations to support data processing, validation, and operational automation.
+                </li>
+                <li class="timeline-bullet-item">
+                  Implement role-based access control (RBAC) and collaborate directly with stakeholders to translate operational requirements into software features.
+                </li>
+              </ul>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">RBAC</span>
+                <span class="tech-tag">Data Integration</span>
+                <span class="tech-tag">Operational Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Data and Development Analyst Intern</h3>
+                  <div class="timeline-company">
+                    <span>Sixs Sports Business &amp; Solutions Inc.</span>
+                  </div>
+                </div>
+                <span class="timeline-badge">Dec 2025 – Feb 2026</span>
+              </div>
+              <div class="timeline-meta">
+                <span>📍 Bengaluru, India</span>
+                <span>🎓 Internship</span>
+                <span>⚡ Healthcare IT &amp; Cloud Workflows</span>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li class="timeline-bullet-item">
+                  Built a Clinical Management System using Next.js and Firebase to automate patient scheduling, billing, and facility operations based on clinical stakeholder requirements.
+                </li>
+                <li class="timeline-bullet-item">
+                  Developed a dual-app ecosystem tailored for physiotherapists and patients, integrating Zoho Mail for real-time transactional email notifications.
+                </li>
+                <li class="timeline-bullet-item">
+                  Configured robust Firestore security rules and role-based authentication to protect sensitive patient clinical data and regulate application access.
+                </li>
+              </ul>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Firestore Rules</span>
+                <span class="tech-tag">Zoho Mail API</span>
+                <span class="tech-tag">Dual-App Ecosystem</span>
+                <span class="tech-tag">Patient Scheduling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Engineered <span class="text-gradient">Projects</span></h2>
+          <p class="section-desc">
+            Explore case studies spanning full-stack web platforms, multi-role security systems, and bioinformatics predictive modeling.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack Apps</button>
+          <button class="filter-btn" data-filter="healthcare">Healthcare &amp; Sports</button>
+          <button class="filter-btn" data-filter="systems">RBAC &amp; Systems</button>
+          <button class="filter-btn" data-filter="data-ml">Data Science &amp; ML</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Centre for Sports Science Website -->
+          <article class="project-card" data-category="fullstack healthcare">
+            <div class="project-media-wrap">
+              <img src="assets/images/sports_science_portal.jpg" alt="Centre for Sports Science Website" class="project-img" loading="lazy">
+              <span class="project-overlay-badge">React • Vite • PHP • MySQL</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <span>Centre for Sports Science Website</span>
+              </h3>
+              <p class="project-desc">
+                High-performance multi-page responsive web portal with modular components for Home, Clinical Services, Pricing, About, and Contact pages with validated inquiry ingestion.
+              </p>
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>PHP/MySQL backend with secure PDO prepared statements.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Resolved production connectivity incident isolating 5 root causes.</span>
+                </li>
+              </ul>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Vite</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+                <button class="project-modal-btn" data-open-modal="sports-science-website">
+                  <span>Architecture &rarr;</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Sports Science Engine -->
+          <article class="project-card" data-category="fullstack healthcare systems">
+            <div class="project-media-wrap">
+              <img src="assets/images/sports_science_dashboard.jpg" alt="Sports Science Engine & Scheduler" class="project-img" loading="lazy">
+              <span class="project-overlay-badge">Next.js • JavaScript • MySQL</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <span>Sports Science Engine</span>
+              </h3>
+              <p class="project-desc">
+                Comprehensive clinic management cockpit featuring inventory monitoring, automated practitioner-athlete scheduling, and financial invoice tracking.
+              </p>
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Intelligent appointment scheduler based on specialist availability.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Automated invoicing, payment reconciliation &amp; revenue reports.</span>
+                </li>
+              </ul>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Invoicing</span>
+                </div>
+                <button class="project-modal-btn" data-open-modal="sports-science-engine">
+                  <span>Architecture &rarr;</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Hostel Management System -->
+          <article class="project-card" data-category="fullstack systems">
+            <div class="project-media-wrap">
+              <img src="assets/images/hostel_rbac_platform.jpg" alt="Hostel Management System" class="project-img" loading="lazy">
+              <span class="project-overlay-badge">Next.js • Supabase • PostgreSQL</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <span>Hostel Management System</span>
+              </h3>
+              <p class="project-desc">
+                Enterprise multi-tenant facility platform engineered with granular role-based access control across six distinct administrative tiers.
+              </p>
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>PostgreSQL migrations with triggers &amp; automated user creation.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Metadata-driven redirection with protected server-side route sessions.</span>
+                </li>
+              </ul>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">Supabase</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">6-Role RBAC</span>
+                </div>
+                <button class="project-modal-btn" data-open-modal="hostel-management-system">
+                  <span>Architecture &rarr;</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Molecular Structure Analysis -->
+          <article class="project-card" data-category="data-ml">
+            <div class="project-media-wrap">
+              <img src="assets/images/molecular_drug_discovery.jpg" alt="Molecular Structure Analysis & Drug Discovery" class="project-img" loading="lazy">
+              <span class="project-overlay-badge">Python • RDKit • DGL-LifeSci</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <span>Molecular Analysis &amp; Drug Discovery</span>
+              </h3>
+              <p class="project-desc">
+                Machine learning workflow processing pharmacogenomics and molecular chemical structures to predict drug cellular sensitivity (IC50 values).
+              </p>
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Unified data integration from PubChem, ChEMBL, and GDSC2.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Molecular fingerprints &amp; graph neural features from SMILES.</span>
+                </li>
+              </ul>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">RDKit</span>
+                  <span class="tech-tag">DGL-LifeSci</span>
+                  <span class="tech-tag">GNN / ML</span>
+                </div>
+                <button class="project-modal-btn" data-open-modal="molecular-drug-discovery">
+                  <span>Architecture &rarr;</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Matrix -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">AI &amp; Engineering Arsenal</span>
+          <h2 class="section-title">Skills &amp; <span class="text-gradient">AI Tooling</span></h2>
+          <p class="section-desc">
+            How I build: Combining high-powered AI coding environments like Cursor, Google Antigravity, and Codex with robust database modeling, cloud services, and machine learning pipelines.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- AI-Native Developer Toolkit (Featured Primary) -->
+          <div class="skill-category-card" style="border-color: var(--border-highlight); background: var(--gradient-subtle);">
+            <div class="category-header">
+              <div class="category-icon" style="background: rgba(6, 182, 212, 0.2); color: var(--accent-cyan);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="category-title" style="color: var(--accent-cyan);">AI-Native Builder Arsenal</h3>
+            </div>
+            <div class="skills-pills-wrap">
+              <span class="skill-badge" style="border-color: rgba(6, 182, 212, 0.4);"><span class="skill-dot"></span>Cursor IDE (Composer)</span>
+              <span class="skill-badge" style="border-color: rgba(99, 102, 241, 0.4);"><span class="skill-dot" style="background: var(--accent-indigo);"></span>Google Antigravity</span>
+              <span class="skill-badge" style="border-color: rgba(168, 85, 247, 0.4);"><span class="skill-dot" style="background: var(--accent-purple);"></span>OpenAI Codex &amp; LLMs</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Prompt &amp; Spec Architecture</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Agentic Refactoring</span>
+              <span class="skill-badge"><span class="skill-dot"></span>AI-Assisted Root Cause Triage</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Rapid 10x Prototyping</span>
+            </div>
+          </div>
+
+          <!-- Backend & Databases -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Backend &amp; Databases</h3>
+            </div>
+            <div class="skills-pills-wrap">
+              <span class="skill-badge"><span class="skill-dot"></span>PostgreSQL</span>
+              <span class="skill-badge"><span class="skill-dot"></span>MySQL</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Supabase</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Firebase &amp; Firestore</span>
+              <span class="skill-badge"><span class="skill-dot"></span>6-Role RBAC Schemas</span>
+              <span class="skill-badge"><span class="skill-dot"></span>RESTful APIs</span>
+              <span class="skill-badge"><span class="skill-dot"></span>PHP / PDO Prepared Stmts</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Flask (Python)</span>
+            </div>
+          </div>
+
+          <!-- Frontend Architecture -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Frontend Assembly</h3>
+            </div>
+            <div class="skills-pills-wrap">
+              <span class="skill-badge"><span class="skill-dot"></span>Next.js (App Router)</span>
+              <span class="skill-badge"><span class="skill-dot"></span>React Components</span>
+              <span class="skill-badge"><span class="skill-dot"></span>JavaScript (ES6+)</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Vite</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Responsive UI Styling</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Framer Motion</span>
+            </div>
+          </div>
+
+          <!-- Data Analytics & ML -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                  <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Data Analytics &amp; ML</h3>
+            </div>
+            <div class="skills-pills-wrap">
+              <span class="skill-badge"><span class="skill-dot"></span>Python &amp; Pandas</span>
+              <span class="skill-badge"><span class="skill-dot"></span>NumPy &amp; Matplotlib</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Exploratory Data Analysis</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Feature Engineering</span>
+              <span class="skill-badge"><span class="skill-dot"></span>RDKit &amp; DGL-LifeSci</span>
+              <span class="skill-badge"><span class="skill-dot"></span>ANN, CNN &amp; NLP</span>
+            </div>
+          </div>
+
+          <!-- Languages & Foundations -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Languages &amp; Querying</h3>
+            </div>
+            <div class="skills-pills-wrap">
+              <span class="skill-badge"><span class="skill-dot"></span>Python</span>
+              <span class="skill-badge"><span class="skill-dot"></span>SQL (PostgreSQL / MySQL)</span>
+              <span class="skill-badge"><span class="skill-dot"></span>JavaScript (ES6+)</span>
+              <span class="skill-badge"><span class="skill-dot"></span>HTML5 &amp; CSS3</span>
+              <span class="skill-badge"><span class="skill-dot"></span>RESTful APIs</span>
+            </div>
+          </div>
+
+          <!-- Developer Ecosystem -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Integrations &amp; Tools</h3>
+            </div>
+            <div class="skills-pills-wrap">
+              <span class="skill-badge"><span class="skill-dot"></span>Git &amp; GitHub</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Power BI &amp; Excel</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Zoho Mail Integration</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Postman</span>
+              <span class="skill-badge"><span class="skill-dot"></span>Terminal &amp; Cloud Workflows</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education &amp; <span class="text-gradient">Foundations</span></h2>
+          <p class="section-desc">
+            A solid grounding in quantitative science, mathematical modeling, and big data computing from St Joseph's University.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <!-- M.Sc. -->
+          <div class="education-card">
+            <span class="edu-year-badge">2024 – 2026</span>
+            <h3 class="edu-degree">M.Sc. Big Data Analytics</h3>
+            <div class="edu-institution">St Joseph’s University</div>
+            <div class="edu-location">
+              <span>📍 Bengaluru, India</span>
+            </div>
+            <p class="edu-notes">
+              Advanced curriculum focusing on distributed systems, large-scale data engineering, statistical modeling, machine learning workflows, predictive algorithms, and database design.
+            </p>
+          </div>
+
+          <!-- B.Sc. -->
+          <div class="education-card">
+            <span class="edu-year-badge">2021 – 2024</span>
+            <h3 class="edu-degree">B.Sc. Physics, Mathematics and Electronics</h3>
+            <div class="edu-institution">St Joseph’s University</div>
+            <div class="edu-location">
+              <span>📍 Bengaluru, India</span>
+            </div>
+            <p class="edu-notes">
+              Rigorous analytical foundation in differential equations, computational physics, discrete mathematics, digital circuit logic, and analytical problem-solving.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="brand-logo" style="margin-bottom: 0.75rem;">
+            <div class="brand-badge">CR</div>
+            <span>Chanthani <span class="text-gradient">N R</span></span>
+          </div>
+          <p style="font-size: 0.95rem; max-width: 480px; line-height: 1.7; color: var(--text-secondary);">
+            AI-Native Software Builder &amp; M.Sc. Big Data Analytics Graduate based in Bengaluru, India. Architecting and deploying high-availability full-stack systems using Cursor, Google Antigravity, and Codex.
+          </p>
+          <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem; flex-wrap: wrap;">
+            <a href="mailto:chanthanirajiraj2003@gmail.com" class="btn btn-primary btn-sm">
+              <svg class="btn-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email Me</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <span>LinkedIn &nearr;</span>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <span>GitHub &nearr;</span>
+            </a>
+            <a href="assets/Chanthani_resume.pdf" download="Chanthani_NR_Resume.pdf" class="btn btn-outline-cyan btn-sm">
+              <span>Resume PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 3rem; flex-wrap: wrap;">
+          <div>
+            <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.75rem; color: var(--accent-cyan); letter-spacing: 0.05em;">Navigation</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.45rem; font-size: 0.9rem;">
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#experience" class="nav-link">Experience</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#skills" class="nav-link">AI &amp; Tech Stack</a></li>
+              <li><a href="#education" class="nav-link">Education</a></li>
+            </ul>
+          </div>
+          <div>
+            <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.75rem; color: var(--accent-cyan); letter-spacing: 0.05em;">Direct Reach</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.45rem; font-size: 0.9rem;">
+              <li><a href="mailto:chanthanirajiraj2003@gmail.com" class="nav-link">chanthanirajiraj2003@gmail.com</a></li>
+              <li><a href="tel:+919380661726" class="nav-link">+91 9380661726</a></li>
+              <li><span style="color: var(--text-muted); font-size: 0.85rem;">Bengaluru, Karnataka, India</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <div>&copy; 2026 Chanthani N R • Engineered with AI-Native Velocity</div>
+        <div>Built with Clean HTML, CSS &amp; Modern JS • 100% Responsive</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Architecture Modal -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modal-project-title" class="modal-title">Project Title</h3>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img id="modal-project-img" src="" alt="Project Visual" class="modal-img-banner">
+        
+        <div class="modal-section-block">
+          <h4 class="modal-section-title">Overview</h4>
+          <p id="modal-project-overview" class="modal-text"></p>
+        </div>
+
+        <div class="modal-section-block">
+          <h4 class="modal-section-title">Technical Architecture &amp; System Design</h4>
+          <p id="modal-project-arch" class="modal-text"></p>
+        </div>
+
+        <div class="modal-section-block">
+          <h4 class="modal-section-title">Engineering Challenges &amp; Incident Triage</h4>
+          <p id="modal-project-incident" class="modal-text"></p>
+        </div>
+
+        <div class="modal-section-block">
+          <h4 class="modal-section-title">Impact &amp; Results</h4>
+          <p id="modal-project-impact" class="modal-text"></p>
+        </div>
+
+        <div class="modal-section-block">
+          <h4 class="modal-section-title">Technologies &amp; Libraries</h4>
+          <div id="modal-project-stack" class="tech-tags"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Preview Modal -->
+  <div id="resume-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-container" style="max-width: 900px;">
+      <div class="modal-header">
+        <h3 id="resume-modal-title" class="modal-title">Chanthani N R — Resume</h3>
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="assets/Chanthani_resume.pdf" download="Chanthani_NR_Resume.pdf" class="btn btn-primary btn-sm">
+            Download PDF
+          </a>
+          <button id="resume-modal-close" class="modal-close-btn" aria-label="Close resume viewer">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 1.25rem;">
+        <div class="resume-frame-container">
+          <iframe src="assets/Chanthani_resume.pdf#toolbar=1" title="Chanthani Resume PDF"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

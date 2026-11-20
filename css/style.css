@@ -22,29 +22,23 @@
   --border-dark: #111827;
 
   /* Deep Ink & Charcoal Typography */
-  --text-primary: #111827;
-  /* Ink Charcoal */
-  --text-secondary: #374151;
-  /* Deep Slate */
-  --text-muted: #6B7280;
-  /* Subtle Stone Grey */
+  --text-primary: #111827;        /* Ink Charcoal */
+  --text-secondary: #374151;      /* Deep Slate */
+  --text-muted: #6B7280;          /* Subtle Stone Grey */
   --text-inverse: #FAF9F6;
 
   /* Muted Slate Indigo Accent */
-  --accent-primary: #3730A3;
-  /* Slate Indigo */
+  --accent-primary: #3730A3;      /* Slate Indigo */
   --accent-primary-hover: #312E81;
   --accent-primary-light: #EEF2FF;
-  --accent-emerald: #065F46;
-  /* Deep Forest Emerald for availability dot */
+  --accent-emerald: #065F46;      /* Deep Forest Emerald for availability dot */
   --accent-emerald-light: #ECFDF5;
 
   /* Intentional Soft Radii */
   --radius-xs: 4px;
   --radius-sm: 8px;
   --radius-md: 12px;
-  --radius-lg: 16px;
-  /* rounded-2xl */
+  --radius-lg: 16px;              /* rounded-2xl */
   --radius-full: 9999px;
 
   /* Restrained, Authentic Shadows */
@@ -102,9 +96,7 @@
 /* ==========================================================================
    Base & Reset
    ========================================================================== */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -137,12 +129,7 @@ body {
 }
 
 /* Typography */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-sans);
   font-weight: 700;
   color: var(--text-primary);
@@ -296,7 +283,6 @@ a {
 .theme-toggle-btn .icon-moon {
   display: block;
 }
-
 .theme-toggle-btn .icon-sun {
   display: none;
 }
@@ -304,7 +290,6 @@ a {
 [data-theme="dark"] .theme-toggle-btn .icon-moon {
   display: none;
 }
-
 [data-theme="dark"] .theme-toggle-btn .icon-sun {
   display: block;
 }
@@ -494,8 +479,7 @@ a {
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: var(--radius-lg);
-  /* rounded-2xl (16px) */
+  border-radius: var(--radius-lg); /* rounded-2xl (16px) */
   border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-card);
   display: block;
@@ -1485,7 +1469,6 @@ a {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .case-study-grid {
     grid-template-columns: 1fr;
     gap: 2rem;

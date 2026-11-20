@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="heroGradLight" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="45%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="softGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#93c5fd" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient soft wave underlay -->
+  <path d="M 190,0 C 90,200 30,380 130,580 C 190,720 310,820 380,900 L 1000,900 L 1000,0 Z" fill="url(#softGlow)" />
+
+  <!-- Main Crisp Fluid Organic Wave matching reference mockup -->
+  <path class="hero-wave-main" d="M 280,0 C 200,170 60,320 70,490 C 80,660 250,780 320,900 L 1000,900 L 1000,0 Z" fill="url(#heroGradLight)" />
+</svg>

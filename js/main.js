@@ -20,23 +20,29 @@ document.addEventListener('DOMContentLoaded', () => {
    ========================================================================== */
 function initTheme() {
   const toggleBtn = document.getElementById('theme-toggle');
-  if (!toggleBtn) return;
-
-  // Retrieve saved theme or default to dark
-  const savedTheme = localStorage.getItem('chanthani_portfolio_theme') || 'dark';
+  
+  // Clear legacy dark cache key and default strictly to crisp professional light mode
+  localStorage.removeItem('chanthani_portfolio_theme');
+  let savedTheme = localStorage.getItem('chanthani_recruiter_theme');
+  if (!savedTheme) {
+    savedTheme = 'light';
+    localStorage.setItem('chanthani_recruiter_theme', 'light');
+  }
   document.documentElement.setAttribute('data-theme', savedTheme);
 
-  toggleBtn.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('chanthani_portfolio_theme', newTheme);
-    showToast(`Switched to ${newTheme} mode`);
-  });
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('chanthani_recruiter_theme', newTheme);
+      showToast(`Switched to ${newTheme} mode`);
+    });
+  }
 }
 
 /* ==========================================================================
-   2. Navigation & Smooth Scrolling
+   2. Navigation & Smooth Scrolling (Recruiter Section Spy)
    ========================================================================== */
 function initNavigation() {
   const header = document.querySelector('.site-header');
@@ -45,31 +51,40 @@ function initNavigation() {
   const links = document.querySelectorAll('.nav-link');
   const sections = document.querySelectorAll('section[id]');
 
-  // Scroll Header Effect
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
+  function updateActiveSection() {
+    if (window.scrollY > 30) {
       header?.classList.add('scrolled');
     } else {
       header?.classList.remove('scrolled');
     }
 
-    // Active Section Spy
     let currentId = '';
+    const scrollPos = window.scrollY + 140;
+
     sections.forEach(section => {
-      const top = section.offsetTop - 120;
+      const top = section.offsetTop;
       const height = section.offsetHeight;
-      if (window.scrollY >= top && window.scrollY < top + height) {
+      if (scrollPos >= top && scrollPos < top + height) {
         currentId = section.getAttribute('id');
       }
     });
 
+    // Check if scrolled near bottom of page
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 80) {
+      const lastSection = sections[sections.length - 1];
+      if (lastSection) currentId = lastSection.getAttribute('id');
+    }
+
     links.forEach(link => {
       link.classList.remove('active');
-      if (link.getAttribute('href') === `#${currentId}`) {
+      if (currentId && link.getAttribute('href') === `#${currentId}`) {
         link.classList.add('active');
       }
     });
-  });
+  }
+
+  window.addEventListener('scroll', updateActiveSection);
+  updateActiveSection(); // Run immediately on load
 
   // Mobile Menu Toggle
   if (mobileToggle && navLinks) {
@@ -155,6 +170,16 @@ function initProjectFiltering() {
    5. Project Architecture Detail Modals
    ========================================================================== */
 const projectDetails = {
+  'clinical-rbac-platform': {
+    title: 'Multi-Tenant Clinical Operations & 6-Role RBAC Platform',
+    image: 'assets/images/sports_science_dashboard.jpg',
+    category: 'Multi-Tenant Architecture & Access Control',
+    stack: ['Next.js 14', 'PostgreSQL', 'Prisma ORM', '6-Role RBAC', 'TypeScript', 'Tailwind CSS', 'Docker'],
+    overview: 'Architected and engineered a HIPAA-aligned, multi-tenant clinical management platform at Sixs Sports Business & Solutions Inc. serving super administrators, clinic directors, sports medicine doctors, physiotherapists, front-desk staff, and patient-athletes.',
+    architecture: 'Designed tenant-scoped PostgreSQL schemas and granular Row-Level Security (RLS) policies ensuring strict multi-organization isolation. Built with Next.js App Router, React Server Components, and Prisma ORM with sub-120ms P95 query response times across multi-tenant datasets. Enforced signed HTTP-only session cookies and CSRF boundary verification.',
+    incidentSolved: 'Access Control & Escalation Hardening: Engineered an exhaustive 6-tier permission matrix across Super Admin, Director, Physician, Physiotherapist, Front Desk, and Athlete. Conducted systematic privilege boundary audits to eliminate horizontal tenant visibility and vertical permission escalation leaks.',
+    impact: 'Successfully eliminated 100% of unauthorized cross-tenant data requests while cutting manual appointment scheduling overhead across sports science clinics by over 70%.'
+  },
   'sports-science-website': {
     title: 'Centre for Sports Science Website & Portal',
     image: 'assets/images/sports_science_portal.jpg',

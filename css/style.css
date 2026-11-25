@@ -65,38 +65,64 @@
 }
 
 /* ==========================================================================
-   Dark Theme (Refined Midnight Slate)
+   Dark Theme (Refined Obsidian Dark Black)
    ========================================================================== */
 [data-theme="dark"] {
-  --bg-body: #0E131F;
-  --bg-surface: #151C2C;
-  --bg-surface-secondary: #1B2438;
-  --bg-card: #151C2C;
-  --bg-card-hover: #192236;
-  --bg-muted: #243048;
-  --bg-glass-nav: rgba(14, 19, 31, 0.92);
+  --bg-body: #080808;
+  --bg-surface: #121212;
+  --bg-surface-secondary: #171717;
+  --bg-card: #121212;
+  --bg-card-hover: #1A1A1A;
+  --bg-muted: #202020;
+  --bg-glass-nav: rgba(8, 8, 8, 0.92);
 
-  --border-subtle: #243048;
-  --border-card: #27344E;
-  --border-hover: #374665;
-  --border-dark: #818CF8;
+  --border-subtle: #202020;
+  --border-card: #262626;
+  --border-hover: #383838;
+  --border-dark: #FFFFFF;
 
   --text-primary: #F9FAFB;
   --text-secondary: #D1D5DB;
-  --text-muted: #9CA3AF;
-  --text-inverse: #0E131F;
+  --text-muted: #8E8E93;
+  --text-inverse: #080808;
 
-  --accent-primary: #818CF8;
-  --accent-primary-hover: #A5B4FC;
-  --accent-primary-light: rgba(129, 140, 248, 0.12);
+  --accent-primary: #EDEDED;
+  --accent-primary-hover: #FFFFFF;
+  --accent-primary-light: rgba(255, 255, 255, 0.08);
   --accent-emerald: #10B981;
   --accent-emerald-light: rgba(16, 185, 129, 0.12);
 
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.55);
-  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.35);
-  --shadow-hover: 0 8px 24px rgba(129, 140, 248, 0.2);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.85);
+  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.6);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.85);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #F4F4F5;
+  color: #080808;
+  border-color: #F4F4F5;
+  font-weight: 700;
+}
+
+[data-theme="dark"] .btn-primary:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+  border-color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .brand-badge {
+  background: #F4F4F5;
+  color: #080808;
+}
+
+[data-theme="dark"] .hero-tagline,
+[data-theme="dark"] .section-tag,
+[data-theme="dark"] .tools-headline-eyebrow,
+[data-theme="dark"] .tools-extra-pills-title {
+  color: #A1A1AA;
 }
 
 /* ==========================================================================
@@ -1648,9 +1674,9 @@ a {
 }
 
 [data-theme="dark"] .tool-icon-box {
-  background: #192236;
-  border-color: #27344E;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  background: #181818;
+  border-color: #282828;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .tool-icon-box svg {
@@ -2448,8 +2474,8 @@ a {
 }
 
 .live-terminal {
-  background: #0E131F;
-  border: 1px solid #243048;
+  background: #080808;
+  border: 1px solid #222222;
   border-radius: var(--radius-xs);
   padding: 1rem 1.15rem;
   font-family: var(--font-mono);
@@ -2466,7 +2492,7 @@ a {
 }
 
 .terminal-prompt {
-  color: #818CF8;
+  color: #EDEDED;
 }
 
 .terminal-success {
@@ -2530,7 +2556,7 @@ a {
   top: -24px;
   left: 0;
   background: #10B981;
-  color: #0E131F;
+  color: #000000;
   font-family: var(--font-mono);
   font-size: 0.68rem;
   font-weight: 700;
@@ -2633,12 +2659,12 @@ a {
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   font-weight: 700;
-  color: #A5B4FC;
+  color: var(--text-primary);
 }
 
 .gatepass-status {
   background: #10B981;
-  color: #0E131F;
+  color: #000000;
   font-size: 0.68rem;
   font-weight: 800;
   padding: 0.15rem 0.5rem;
@@ -3782,7 +3808,7 @@ a {
 
   .resume-preview-img-container {
     padding: 0.35rem;
-    background: #1F2937;
+    background: #121212;
     max-height: 75vh;
   }
 

@@ -1542,8 +1542,201 @@ a {
 }
 
 /* ==========================================================================
-   Skills Matrix
+   Premium Tools & Daily Production Stack
    ========================================================================== */
+.tools-section {
+  padding: 6rem 0 5.5rem;
+  background: var(--bg-body);
+  position: relative;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.tools-headline-wrap {
+  margin-bottom: 2.5rem;
+}
+
+.tools-headline-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent-primary);
+  margin-bottom: 0.65rem;
+}
+
+.tools-big-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.85rem;
+  align-items: baseline;
+  font-size: clamp(2.75rem, 5.5vw, 4.25rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+.tools-title-primary {
+  color: var(--text-primary);
+}
+
+.tools-title-muted {
+  color: var(--text-muted);
+  opacity: 0.28;
+}
+
+[data-theme="dark"] .tools-title-muted {
+  color: #9CA3AF;
+  opacity: 0.22;
+}
+
+.tools-intro-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 680px;
+  line-height: 1.6;
+  margin-top: 0.85rem;
+}
+
+/* 3-Column App Grid (Desktop) */
+.tools-apps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem 1.4rem;
+  margin-bottom: 2.25rem;
+}
+
+.tool-app-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 18px;
+  padding: 1.05rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+  cursor: default;
+}
+
+.tool-app-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+  background: var(--bg-card-hover);
+}
+
+.tool-icon-box {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  box-shadow: 0 2px 6px rgba(17, 24, 39, 0.04);
+  transition: transform var(--transition-fast);
+}
+
+.tool-app-card:hover .tool-icon-box {
+  transform: scale(1.05);
+}
+
+[data-theme="dark"] .tool-icon-box {
+  background: #192236;
+  border-color: #27344E;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.tool-icon-box svg {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.tool-meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.tool-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+  margin-bottom: 0.18rem;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tool-role {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Extended Tech Breakdown Drawer */
+.tools-extra-pills-card {
+  background: var(--bg-surface-secondary);
+  border: 1px dashed var(--border-subtle);
+  border-radius: 16px;
+  padding: 1.25rem 1.45rem;
+}
+
+.tools-extra-pills-title {
+  font-size: 0.725rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.85rem;
+}
+
+.tools-pills-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.tool-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-xs);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.785rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.tool-chip:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  transform: translateY(-1px);
+}
+
+.tool-chip-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+}
+
+/* Legacy skills grid support */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2728,6 +2921,20 @@ a {
     align-items: flex-start;
   }
 
+  /* Premium Tools Responsive (Tablet) */
+  .tools-section {
+    padding: 4.5rem 0 3.5rem;
+  }
+
+  .tools-apps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.15rem;
+  }
+
+  .tools-big-title {
+    font-size: clamp(2.4rem, 6.5vw, 3.5rem);
+  }
+
   .mobile-toggle {
     display: flex;
     align-items: center;
@@ -2760,6 +2967,55 @@ a {
 
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Premium Tools Responsive (Mobile Phones) */
+  .tools-section {
+    padding: 3.5rem 0 2.5rem;
+  }
+
+  .tools-apps-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .tools-big-title {
+    font-size: 2.35rem;
+  }
+
+  .tool-app-card {
+    padding: 0.85rem 1.05rem;
+    border-radius: 14px;
+    gap: 0.95rem;
+  }
+
+  .tool-icon-box {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 11px;
+  }
+
+  .tool-icon-box svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .tool-name {
+    font-size: 0.925rem;
+  }
+
+  .tool-role {
+    font-size: 0.75rem;
+  }
+
+  .tools-extra-pills-card {
+    padding: 1rem 1.15rem;
+  }
+
+  .tool-chip {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.74rem;
   }
 
   .case-study-card {
@@ -3157,7 +3413,8 @@ a {
   }
 
   .hero-visual-side {
-    display: none; /* Replaced by executive mobile card */
+    display: none;
+    /* Replaced by executive mobile card */
   }
 
   .hero-grid {
@@ -3560,5 +3817,13 @@ a {
 
   .ams-metrics-grid {
     grid-template-columns: 1fr;
+  }
+
+  .tools-big-title {
+    font-size: 2rem;
+  }
+
+  .tool-app-card {
+    padding: 0.75rem 0.85rem;
   }
 }

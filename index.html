@@ -87,46 +87,75 @@
       <div class="container hero-grid">
         <!-- Left Column: Clear Engineering Headline & Bio -->
         <div class="hero-content">
-          <div class="hero-tagline mono">// SOFTWARE DEVELOPER &bull; BENGALURU</div>
+          <!-- Executive Profile Card for Mobile (Hidden on Desktop) -->
+          <div class="hero-mobile-card">
+            <div class="hero-mobile-photo-box">
+              <img src="assets/images/chanthani_portrait.jpg" alt="Chanthani N R" class="hero-mobile-photo">
+            </div>
+            <div class="hero-mobile-details">
+              <div class="hero-mobile-badge-row">
+                <span class="hero-status-pill">
+                  <span class="status-indicator-dot"></span> Open to Roles
+                </span>
+                <span class="hero-loc-pill">📍 Bengaluru</span>
+              </div>
+              <h2 class="hero-mobile-title">Chanthani N R</h2>
+              <div class="hero-mobile-role mono">// Software Developer &amp; Data Engineer</div>
+              <div class="hero-mobile-edu">M.Sc. Big Data Analytics (2024–2026)</div>
+            </div>
+          </div>
+
+          <div class="hero-tagline mono desktop-tagline">// SOFTWARE DEVELOPER &bull; BENGALURU</div>
           <h1 class="hero-headline">Building fast web apps, secure databases, and automated tools.</h1>
           <p class="hero-bio">
-            Full-stack developer and <strong>M.Sc. Big Data Analytics Candidate (2024 – 2026)</strong> at <strong>Sixs
-              Sports Business &amp; Solutions</strong> in Bengaluru. I engineer web applications with Next.js and secure PostgreSQL databases, and used our Athlete Management System (AMS) to analyze performance test data for <strong>700+ student athletes</strong> to assist the <strong>Government of Karnataka (DYES)</strong> talent selection trials.
+            Full-stack developer at <strong>Sixs Sports Business &amp; Solutions</strong> in Bengaluru. I engineer web applications with Next.js and secure PostgreSQL databases, and used our Athlete Management System (AMS) to analyze performance test data for <strong>700+ student athletes</strong> to assist the <strong>Government of Karnataka (DYES)</strong> talent selection trials.
           </p>
+
+          <!-- Core Tech Stack Quick Pills (Scannable on Mobile & Desktop) -->
+          <div class="hero-stack-pills">
+            <span class="hero-stack-pill">Next.js 14</span>
+            <span class="hero-stack-pill">React &amp; Vite</span>
+            <span class="hero-stack-pill">PostgreSQL</span>
+            <span class="hero-stack-pill">Python</span>
+            <span class="hero-stack-pill">Karnataka DYES AMS</span>
+          </div>
 
           <!-- Single Primary Action + Interactive Demos + Direct Reach Icon Links -->
           <div class="hero-actions-row">
-            <a href="#projects" class="btn btn-primary">
-              <span>Explore Projects &rarr;</span>
-            </a>
-            <button class="btn btn-secondary" data-open-demo="ams">
-              <svg class="btn-icon" viewBox="0 0 24 24" style="color: var(--accent-primary);">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-              </svg>
-              <span>⚡ Try Live Demos</span>
-            </button>
+            <div class="hero-primary-btns">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Projects &rarr;</span>
+              </a>
+              <button class="btn btn-secondary" data-open-demo="ams">
+                <svg class="btn-icon" viewBox="0 0 24 24" style="color: var(--accent-primary);">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+                <span>Try Live Demos</span>
+              </button>
+            </div>
 
-            <div class="hero-social-links">
-              <a href="mailto:chanthanirajiraj2003@gmail.com" class="icon-btn" aria-label="Send Email"
-                title="Email Chanthani">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <!-- Sleek Minimalist Social Links (No heavy Linktree boxes) -->
+            <div class="hero-reach-strip">
+              <a href="mailto:chanthanirajiraj2003@gmail.com" class="hero-reach-link" title="Email Chanthani">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
+                <span>Email &nearr;</span>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="icon-btn"
-                aria-label="LinkedIn Profile" title="LinkedIn Profile">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              <span class="reach-dot">&bull;</span>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hero-reach-link" title="LinkedIn Profile">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
+                <span>LinkedIn &nearr;</span>
               </a>
-              <a href="https://github.com/Chanthani-N-R-31" target="_blank" rel="noopener noreferrer" class="icon-btn"
-                aria-label="GitHub Profile" title="GitHub Profile">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              <span class="reach-dot">&bull;</span>
+              <a href="https://github.com/Chanthani-N-R-31" target="_blank" rel="noopener noreferrer" class="hero-reach-link" title="GitHub Profile">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
+                <span>GitHub &nearr;</span>
               </a>
             </div>
           </div>
@@ -137,6 +166,10 @@
           <div class="hero-portrait-frame">
             <img src="assets/images/chanthani_portrait.jpg" alt="Chanthani N R - Software Developer"
               class="hero-portrait-img">
+            <div class="hero-portrait-badge">
+              <span class="status-indicator-dot"></span>
+              <span>Available for Software Engineering Roles</span>
+            </div>
           </div>
         </div>
       </div>
@@ -692,29 +725,29 @@
           </article>
 
           <!-- Project 7: Workforce Attendance & Shift Policy Engine (In-Office & OD) -->
+          <!-- Project 7: Employee Attendance & GPS Geofencing Portal -->
           <article class="project-card" data-category="systems healthcare">
             <div class="project-media-wrap">
-              <img src="assets/images/sports_science_dashboard.jpg" alt="Workforce Attendance & Shift Policy Engine"
+              <img src="assets/images/sports_science_dashboard.jpg" alt="Employee Attendance & Geofenced Check-In Portal"
                 class="project-img" loading="lazy">
-              <span class="project-overlay-badge">PHP • MySQL • Shift Deadlines • Staff Policy</span>
+              <span class="project-overlay-badge">PHP • MySQL • GPS Geofencing • Staff Login</span>
             </div>
             <div class="project-body">
-              <h3 class="project-title">Employee Shift &amp; Attendance Policy Tracker</h3>
+              <h3 class="project-title">Employee Attendance Portal with GPS Geofencing (Check-In &amp; Check-Out)</h3>
               <p class="project-desc">
-                A staff attendance tracker that logs daily office check-ins, flags late arrivals past cutoff times, and
-                handles off-site duty approvals.
+                A self-service staff portal where employees log in from their own accounts to check in and check out. Uses device GPS (latitude &amp; longitude) to verify staff are physically inside the 100m office geofence before approving an in-office punch.
               </p>
 
               <!-- Standard Stack Breakdown -->
               <div class="project-stack-breakdown">
-                <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">HTML5, CSS3 &amp; JavaScript</span></div>
-                <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">PHP Shift Policy Logic Engine</span></div>
-                <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">MySQL Ledger</span></div>
+                <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">HTML5, CSS3, JavaScript (Geolocation API &amp; Self-Service Login)</span></div>
+                <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">PHP Geofence Distance Calculator &amp; Shift Policy Rules</span></div>
+                <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">MySQL Attendance Ledger (Coordinates, Timestamps &amp; Approvals)</span></div>
               </div>
 
               <div class="how-it-works">
                 <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
-                <p class="how-it-works-text">Punch ledger interface connected to MySQL database rules that evaluate arrival timestamps against shift policies (e.g. 9:30 AM cutoff) and automate On-Duty work permits.</p>
+                <p class="how-it-works-text">Staff authenticate with their personal login to submit check-in and check-out punches. The frontend requests device latitude and longitude via the browser Geolocation API; the backend calculates distance from office coordinates (Haversine formula), validates the 100m geofence radius, and commits verified punches to MySQL.</p>
               </div>
 
               <ul class="project-highlights-list">
@@ -722,26 +755,33 @@
                   <svg viewBox="0 0 24 24" fill="none">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>Checks check-in times against morning (9:30 AM) and afternoon (2:00 PM) deadlines.</span>
+                  <span>Self-service employee login allowing staff to record check-in and check-out punches securely from their own devices.</span>
                 </li>
                 <li class="project-highlight-item">
                   <svg viewBox="0 0 24 24" fill="none">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>Supports approved Out-of-Office (On-Duty) requests without giving employees unfair late
-                    penalties.</span>
+                  <span>GPS geofencing checks live latitude and longitude to verify physical presence inside the 100m office perimeter.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Evaluates arrival timestamps against morning (9:30 AM) and afternoon (2:00 PM) deadlines, with approved off-site (On-Duty) support.</span>
                 </li>
               </ul>
               <div class="project-takeaway">
                 <span class="takeaway-label mono">// HARDEST BUG SOLVED:</span>
-                Fixed night-shift calculation errors where shifts crossing midnight confused the attendance database.
+                Handled indoor GPS drift and erratic mobile browser coordinates by building an accuracy tolerance filter and a 100-meter geofence buffer to prevent false out-of-office rejections.
               </div>
               <div class="project-footer">
                 <div class="tech-tags">
                   <span class="tech-tag">PHP</span>
                   <span class="tech-tag">MySQL</span>
-                  <span class="tech-tag">Shift Deadlines</span>
-                  <span class="tech-tag">Duty Approvals</span>
+                  <span class="tech-tag">GPS Geofencing</span>
+                  <span class="tech-tag">Lat &amp; Long</span>
+                  <span class="tech-tag">Staff Login</span>
+                  <span class="tech-tag">Check-In / Out</span>
                 </div>
                 <div class="project-actions">
                   <button class="project-modal-btn" data-open-modal="workforce-attendance-engine">
@@ -752,7 +792,7 @@
                       stroke-width="2.5">
                       <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                     </svg>
-                    <span>Test In-Office / OD Policy</span>
+                    <span>Test Geofence &amp; Login Demo</span>
                   </button>
                 </div>
               </div>
@@ -1250,6 +1290,13 @@
       <div class="modal-body">
         <img id="modal-project-img" src="" alt="Project Visual" class="modal-img-banner">
 
+        <!-- Crystal-Clear Frontend / Backend / Database Modal Architecture Banner -->
+        <div class="modal-stack-banner" id="modal-project-stack-banner">
+          <div class="arch-badge"><span class="arch-k">FRONTEND:</span> <span class="arch-v" id="modal-arch-frontend">React / Next.js</span></div>
+          <div class="arch-badge"><span class="arch-k">BACKEND:</span> <span class="arch-v" id="modal-arch-backend">Node.js / Python / PHP</span></div>
+          <div class="arch-badge"><span class="arch-k">DATABASE:</span> <span class="arch-v" id="modal-arch-database">PostgreSQL / MySQL</span></div>
+        </div>
+
         <!-- Architecture Blueprint Visual Slot in Modal -->
         <div class="modal-section-block" id="modal-diagram-block" style="display: none;">
           <h4 class="modal-section-title">System Architecture Blueprint</h4>
@@ -1316,8 +1363,8 @@
           <span>Code &rarr; Flowchart</span>
         </button>
         <button class="demo-tab-btn" data-demo-tab="workforce" role="tab" aria-selected="false">
-          <span class="demo-tab-tag">POLICY ENGINE</span>
-          <span>Shift &amp; Late Policy</span>
+          <span class="demo-tab-tag">GPS GEOFENCE</span>
+          <span>Staff Geofenced Check-In/Out</span>
         </button>
       </div>
 
@@ -1730,23 +1777,22 @@
         <!-- PANE 4: Workforce In-Office & OD Policy Engine -->
         <div id="demo-pane-workforce" class="demo-pane" role="tabpanel">
           <div class="demo-architecture-banner">
-            <div class="arch-badge"><span class="arch-k">FRONTEND:</span> <span class="arch-v">HTML5, CSS3 &amp; JavaScript</span></div>
-            <div class="arch-badge"><span class="arch-k">BACKEND:</span> <span class="arch-v">PHP Shift Policy Logic Engine</span></div>
-            <div class="arch-badge"><span class="arch-k">DATABASE:</span> <span class="arch-v">MySQL Ledger</span></div>
+            <div class="arch-badge"><span class="arch-k">FRONTEND:</span> <span class="arch-v">HTML5 Geolocation API &amp; Self-Service Login UI</span></div>
+            <div class="arch-badge"><span class="arch-k">BACKEND:</span> <span class="arch-v">PHP Geofence Distance Engine &amp; Shift Cutoffs</span></div>
+            <div class="arch-badge"><span class="arch-k">DATABASE:</span> <span class="arch-v">MySQL Ledger (Coordinates, Times &amp; Actions)</span></div>
           </div>
           <div class="demo-playground-grid">
             <div class="demo-card">
               <div class="demo-card-title">
-                <span>Employee Check-In &amp; Shift Policy</span>
-                <span class="tech-tag" style="font-size: 0.7rem;">Shift Deadlines</span>
+                <span>Employee Login &amp; Geofenced Punch</span>
+                <span class="tech-tag" style="font-size: 0.7rem;">GPS Geofencing</span>
               </div>
               <p class="demo-card-subtitle">
-                Test how the attendance system handles on-time punches vs late check-ins, or verifies authorized
-                off-site work (On-Duty).
+                Staff log in with their own account to punch In or Out. Device GPS reads latitude and longitude to verify physical presence within the 100m office perimeter.
               </p>
 
               <div class="demo-field-group">
-                <label class="demo-label" for="workforce-emp-select">Select Employee:</label>
+                <label class="demo-label" for="workforce-emp-select">Select Employee Account (Self-Service Login):</label>
                 <select id="workforce-emp-select" class="demo-select">
                   <option value="EMP-0101" data-name="Dr. Rajesh Rao" data-role="Orthopedic Surgeon"
                     data-dept="Clinical Medicine">Dr. Rajesh Rao (Orthopedic Surgeon, EMP-0101)</option>
@@ -1757,38 +1803,48 @@
                   <option value="EMP-0104" data-name="Pooja Verma" data-role="Clinical Coordinator"
                     data-dept="Operations">Pooja Verma (Clinical Coordinator, EMP-0104)</option>
                 </select>
+                <div style="font-size: 0.75rem; color: var(--accent-primary); font-weight: 600; margin-top: 0.35rem;">
+                  <span style="color: #10B981;">●</span> Authenticated Session: <span id="workforce-current-emp">Dr. Rajesh Rao (EMP-0101)</span>
+                </div>
               </div>
 
               <div class="demo-field-group">
-                <label class="demo-label" for="workforce-mode-select">Check-In Type:</label>
-                <select id="workforce-mode-select" class="demo-select">
-                  <option value="in_office">In-Office (Physical Desk / Biometric)</option>
-                  <option value="out_of_office">Out-of-Office (Approved On-Duty / Offsite Work)</option>
+                <label class="demo-label" for="workforce-action-select">Punch Action:</label>
+                <select id="workforce-action-select" class="demo-select">
+                  <option value="check_in">Punch Check-In (Arrival / Shift Start)</option>
+                  <option value="check_out">Punch Check-Out (Departure / Shift End)</option>
                 </select>
               </div>
 
               <div class="demo-field-group">
-                <label class="demo-label" for="workforce-time-select">Select Arrival Time:</label>
+                <label class="demo-label" for="workforce-location-select">Device GPS Location (Latitude &amp; Longitude):</label>
+                <select id="workforce-location-select" class="demo-select">
+                  <option value="office_inside" data-lat="12.9716" data-lng="77.5946" data-dist="18m">Inside Office HQ — 12.9716° N, 77.5946° E (18m from desk • Inside 100m Geofence ✓)</option>
+                  <option value="office_outside" data-lat="12.9352" data-lng="77.6245" data-dist="4.8km">Outside Office Perimeter — 12.9352° N, 77.6245° E (4.8 km away • Geofence Breach ✗)</option>
+                  <option value="out_of_office_od" data-lat="12.9352" data-lng="77.6245" data-dist="4.8km">Off-Site / Remote — Approved On-Duty (OD Permit Active ✓)</option>
+                </select>
+                <button type="button" id="workforce-detect-gps-btn" class="btn btn-secondary btn-sm" style="margin-top: 0.4rem; width: 100%; font-size: 0.75rem; padding: 0.35rem 0.5rem;">
+                  <span>📍 Detect Live Device GPS (Lat &amp; Long)</span>
+                </button>
+              </div>
+
+              <div class="demo-field-group">
+                <label class="demo-label" for="workforce-time-select">Select Punch Time:</label>
                 <select id="workforce-time-select" class="demo-select">
-                  <option value="09:12:00" data-label="09:12 AM">09:12 AM (Morning Shift • Before 09:30 Deadline - ON
-                    TIME)</option>
-                  <option value="09:47:30" data-label="09:47 AM">09:47 AM (Morning Shift • 17 Mins Late - FLAGS MANAGER)
-                  </option>
-                  <option value="13:50:00" data-label="01:50 PM">01:50 PM (Afternoon Shift • Before 02:00 Deadline - ON
-                    TIME)</option>
-                  <option value="14:25:00" data-label="02:25 PM">02:25 PM (Afternoon Shift • 25 Mins Late - FLAGS
-                    MANAGER)</option>
+                  <option value="09:12:00" data-label="09:12 AM">09:12 AM (Morning Shift • Before 09:30 Deadline — ON TIME)</option>
+                  <option value="09:47:30" data-label="09:47 AM">09:47 AM (Morning Shift • 17 Mins Late — FLAGS MANAGER)</option>
+                  <option value="13:50:00" data-label="01:50 PM">01:50 PM (Afternoon Shift • Before 02:00 Deadline — ON TIME)</option>
+                  <option value="18:05:00" data-label="06:05 PM">06:05 PM (Evening Check-Out • Completed 8.5h Shift — ON TIME)</option>
                 </select>
               </div>
 
               <button id="workforce-punch-btn" class="btn btn-primary btn-sm" style="width: 100%;">
-                <span>Submit Check-In Time</span>
+                <span>Submit Punch with GPS Verification</span>
               </button>
 
               <div class="live-terminal" id="workforce-terminal" style="margin-top: 1rem;">
-                <div class="terminal-line terminal-prompt">$ // Shift policy tracker ready</div>
-                <div class="terminal-line" style="color: #9CA3AF;">$ Pick staff member and punch time to see rule
-                  evaluation...</div>
+                <div class="terminal-line terminal-prompt">$ // Geofenced attendance engine ready</div>
+                <div class="terminal-line" style="color: #9CA3AF;">$ Employee logs in and submits check-in / check-out with GPS coordinates...</div>
               </div>
             </div>
 
@@ -1796,27 +1852,29 @@
             <div class="demo-card">
               <div class="demo-card-title">
                 <span>Daily Shift Attendance Ledger</span>
-                <span class="tech-tag" style="font-size: 0.7rem;">Live Audit</span>
+                <span class="tech-tag" style="font-size: 0.7rem;">MySQL Audit</span>
               </div>
-              <p class="demo-card-subtitle">Real-time status updates based on morning/afternoon shift cutoffs.</p>
+              <p class="demo-card-subtitle">Real-time attendance commits with GPS latitude/longitude and shift rule checks.</p>
 
               <div style="overflow-x: auto;">
                 <table class="attendance-ledger-table">
                   <thead>
                     <tr>
-                      <th>STAFF</th>
-                      <th>TYPE</th>
+                      <th>STAFF (LOGIN)</th>
+                      <th>ACTION</th>
+                      <th>GPS (LAT / LONG)</th>
                       <th>PUNCH TIME</th>
-                      <th>RULE CHECK</th>
+                      <th>GEOFENCE CHECK</th>
                       <th>STATUS</th>
                     </tr>
                   </thead>
                   <tbody id="workforce-ledger-tbody">
                     <tr>
                       <td style="font-weight: 600;">Dr. Rajesh Rao</td>
-                      <td>In-Office</td>
-                      <td class="mono">09:12:00</td>
-                      <td style="font-size: 0.75rem; color: #10B981;">Arrived before 09:30 cutoff</td>
+                      <td><span style="font-weight: 600; color: #4F46E5;">Check-In</span></td>
+                      <td class="mono" style="font-size: 0.75rem;">12.9716° N, 77.5946° E</td>
+                      <td class="mono">09:12:00 AM</td>
+                      <td style="font-size: 0.75rem; color: #10B981;">Inside Office (18m)</td>
                       <td><span class="badge-present">ON TIME</span></td>
                     </tr>
                   </tbody>
@@ -1827,9 +1885,7 @@
                 <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.35rem;"
                   class="mono">// WHY THIS MATTERS:</div>
                 <p style="font-size: 0.8rem; line-height: 1.55; color: var(--text-muted); margin: 0;">
-                  Evaluates employee arrival against morning (09:30 AM) and afternoon (02:00 PM) deadlines
-                  automatically. Late arrivals are clearly flagged for manager review, while authorized off-site staff
-                  receive full credit without late penalties.
+                  Employees log in from their own dashboard to check in and check out. Device GPS reads live latitude and longitude to verify physical presence within the 100-meter office geofence, eliminating buddy punching and proxy attendance while allowing authorized off-site staff to submit verified On-Duty (OD) records.
                 </p>
               </div>
             </div>

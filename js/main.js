@@ -176,6 +176,9 @@ const projectDetails = {
     image: 'assets/images/sports_science_dashboard.jpg',
     category: 'Healthcare & Sports Analytics Platform',
     stack: ['Next.js 14', 'PostgreSQL', 'Node.js', 'Python Analytics', 'Prisma ORM', '6-Role Access', 'Tailwind CSS'],
+    frontend: 'Next.js 14, React & Tailwind CSS (6-Role Portals)',
+    backend: 'Node.js, Python Analytics (Derivatives & 3-Tier Classification)',
+    database: 'PostgreSQL with 6-Role Access (Private Medical Records)',
     overview: 'Built a multi-role clinic management platform at Sixs Sports Business with 6 login roles (Doctors, Physios, Admins, Receptionists, and Athletes) to manage visits and private records. In our sports analytics workflows, we used our Athlete Management System (AMS) to evaluate over 700 student athletes and generate automated 3-tier benchmark reports to assist the Government of Karnataka (DYES) talent selection trials.',
     architecture: 'Built with Next.js 14, Node.js, and PostgreSQL. Frontend offers clean, role-tailored dashboards for doctors and staff. Backend manages appointment scheduling and runs analytics scripts for athletic derivatives (sprint speed, vertical jump power, endurance). PostgreSQL keeps patient records strictly private per role.',
     incidentSolved: 'Hardest Bug Solved (Automating 3-Tier Cohort Benchmarking): Raw test scores across different age brackets skewed ranking percentiles. Solved by writing a normalization formula that benchmarks raw scores against sport-specific state standards.',
@@ -187,6 +190,9 @@ const projectDetails = {
     image: 'assets/images/sports_science_portal.jpg',
     category: 'Full-Stack Web Portal',
     stack: ['React', 'Vite', 'PHP', 'MySQL', 'Responsive UI'],
+    frontend: 'React 18 & Vite (Fast Multi-Page Interface)',
+    backend: 'PHP REST API (Validated Inquiries & Sanitized Inputs)',
+    database: 'MySQL (Consultation Bookings & Inquiry Records)',
     overview: 'Built a modern, mobile-friendly website for the Centre for Sports Science with clinic service pages, treatment pricing, and an online inquiry booking form.',
     architecture: 'Combined a fast React frontend bundled with Vite for near-instant page loads and a PHP backend connected to MySQL. Form submissions are safely checked on the server to block spam and malicious code.',
     incidentSolved: 'Hardest Bug Solved (Server Connectivity Fix): Diagnosed and fixed a live production bug where contact forms failed to save due to mismatched database credentials and server routing settings.',
@@ -198,6 +204,9 @@ const projectDetails = {
     image: 'assets/images/sports_science_dashboard.jpg',
     category: 'Clinic Management & Operations',
     stack: ['Next.js', 'JavaScript', 'MySQL', 'Automated Billing', 'Calendar Engine'],
+    frontend: 'Next.js 14 & React (Admin Calendar Dashboard)',
+    backend: 'Node.js (Doctor Availability Scheduler & Invoices)',
+    database: 'MySQL (Doctor Shifts, Bookings & Billing)',
     overview: 'Developed an administrative dashboard to manage doctor appointment calendars, medical equipment inventory, and patient billing in one place.',
     architecture: 'Built with Next.js and MySQL. Features a smart calendar algorithm that checks real-time doctor availability to prevent appointment clashes, and automatically calculates billing invoices.',
     incidentSolved: 'Hardest Bug Solved (Preventing Double-Bookings): Fixed a race condition where two receptionists could accidentally book the same doctor at the exact same minute by adding database reservation locks.',
@@ -209,6 +218,9 @@ const projectDetails = {
     image: 'assets/images/hostel_rbac_platform.jpg',
     category: 'Student Housing & Facilities',
     stack: ['Next.js', 'Supabase', 'PostgreSQL', 'Database Rules', 'QR Passes'],
+    frontend: 'Next.js App Router, Tailwind CSS (Checkout & Passes)',
+    backend: 'Node.js & Database Triggers (Room Capacity Rules)',
+    database: 'PostgreSQL on Supabase (Beds, Allocations & QR Passes)',
     overview: 'Built an automated online portal to manage student hostel admissions, allocate available beds, and issue digital gate passes for student athletes.',
     architecture: 'Uses PostgreSQL database rules that automatically check room vacancy before confirming a check-in. Once a bed is booked, the system automatically creates a digital entry pass with a QR code.',
     incidentSolved: 'Hardest Bug Solved (Stopping Overbooked Rooms): When multiple students tried picking the same room simultaneously, rooms became overcrowded. Solved by having the database verify available beds atomically before saving the booking.',
@@ -221,6 +233,9 @@ const projectDetails = {
     category: 'Data Science & Machine Learning',
     stack: ['Python', 'Pandas', 'RDKit', 'Machine Learning', 'Data Cleaning'],
     github: 'https://github.com/Chanthani-N-R-31',
+    frontend: 'Streamlit / Python Interactive Web Dashboard',
+    backend: 'Python (RDKit, Scikit-learn, PyTorch ML)',
+    database: 'PubChem & ChEMBL Datasets (Molecular SMILES & Assays)',
     overview: 'Built a Python data science workflow that analyzes the chemical structures of medicines and predicts how effectively they treat disease cells.',
     architecture: 'Combined large datasets from scientific repositories (PubChem and ChEMBL). Cleaned chemical formulas, extracted key molecular features, and trained predictive machine learning models in Python.',
     incidentSolved: 'Hardest Bug Solved (Handling Incomplete Chemical Records): Fixed issues with missing chemical values and irregular formulas by writing custom cleaning functions to keep the prediction model accurate.',
@@ -232,6 +247,9 @@ const projectDetails = {
     image: 'assets/images/sports_science_portal.jpg',
     category: 'Computer Vision & AI',
     stack: ['Python', 'OpenCV', 'Face Recognition AI', 'Camera Vision', 'SQLite'],
+    frontend: 'HTML5 Web Camera & Tailwind CSS',
+    backend: 'Python (OpenCV & Deep Learning CNN Face AI)',
+    database: 'SQLite / PostgreSQL (Enrolled Student Roster & Timestamps)',
     overview: 'Built a contactless student attendance system using camera vision and Python to recognize faces and record morning attendance in under 3 seconds.',
     architecture: 'Detects student faces through a camera feed, compares facial measurements against stored student photos, and automatically marks them present in the attendance database.',
     incidentSolved: 'Hardest Bug Solved (Dim Hallway Lighting): Fixed false rejections caused by dark or uneven hallway lighting by applying image brightness equalization before scanning faces.',
@@ -243,6 +261,9 @@ const projectDetails = {
     image: 'assets/images/sports_science_dashboard.jpg',
     category: 'Developer Tooling',
     stack: ['Python', 'Code Parser', 'SVG Visualizer', 'JavaScript', 'Algorithms'],
+    frontend: 'Vanilla JavaScript & Scalable Vector Graphics (SVG)',
+    backend: 'Python AST Tokenizer & Algorithmic Parser',
+    database: 'In-Memory Abstract Syntax Tree (Client-Side)',
     overview: 'Built a developer tool that reads Python source code and automatically turns it into an interactive, step-by-step flowchart diagram.',
     architecture: 'Scans Python code structure (functions, if/else checks, and loops), calculates clean layout positions, and draws scalable vector diagrams with decision boxes and arrows.',
     incidentSolved: 'Hardest Bug Solved (Untangling Overlapping Arrows): Fixed confusing, crossed-over arrows in nested loops by calculating clean detour paths around existing boxes.',
@@ -250,15 +271,18 @@ const projectDetails = {
     blueprint: '<div class="blueprint-flow"><div class="blueprint-step"><span class="blueprint-step-num mono">01</span><div class="blueprint-step-desc"><strong>Code Scanner:</strong> Reads Python code and identifies functions, conditions, and loops.</div></div><div class="blueprint-step"><span class="blueprint-step-num mono">02</span><div class="blueprint-step-desc"><strong>Flow Layout:</strong> Maps out boxes and connects True/False branches.</div></div><div class="blueprint-step"><span class="blueprint-step-num mono">03</span><div class="blueprint-step-desc"><strong>SVG Drawing:</strong> Renders a clean visual diagram with clear arrows.</div></div></div>'
   },
   'workforce-attendance-engine': {
-    title: 'Employee Shift & Attendance Policy Tracker',
+    title: 'Employee Attendance Portal with GPS Geofencing (Check-In & Check-Out)',
     image: 'assets/images/sports_science_dashboard.jpg',
     category: 'Workforce & Policy Systems',
-    stack: ['PHP', 'MySQL', 'Shift Deadlines', 'Duty Approvals', 'Audit History'],
-    overview: 'Built an employee attendance policy engine that tracks daily office check-ins, checks shift cutoff deadlines (9:30 AM and 2:00 PM), and handles off-site duty approvals.',
-    architecture: 'Connects employee check-ins to MySQL database rules that evaluate arrival times against shift policies, flag late check-ins for manager review, and approve authorized off-site work.',
-    incidentSolved: 'Hardest Bug Solved (Night-Shift Boundary Fix): Fixed a bug where late-night shifts crossing past midnight caused the system to falsely record staff as absent on the following day.',
-    impact: 'Eliminated manual attendance disputes, made staff availability transparent, and cut payroll calculation delays by 85%.',
-    blueprint: '<div class="blueprint-flow"><div class="blueprint-step"><span class="blueprint-step-num mono">01</span><div class="blueprint-step-desc"><strong>Check-In Capture:</strong> Records staff punch-in time from biometric or web screen.</div></div><div class="blueprint-step"><span class="blueprint-step-num mono">02</span><div class="blueprint-step-desc"><strong>Policy Check:</strong> Compares time against shift cutoffs (9:30 AM / 2:00 PM) or On-Duty permit.</div></div><div class="blueprint-step"><span class="blueprint-step-num mono">03</span><div class="blueprint-step-desc"><strong>Ledger Update:</strong> Saves verified status (On-Time, Late, or Approved On-Duty) to database.</div></div></div>'
+    stack: ['PHP', 'MySQL', 'GPS Geolocation API', 'Geofencing', 'Employee Login', 'Shift Rules'],
+    frontend: 'HTML5 Geolocation API, CSS3 & Self-Service Login UI',
+    backend: 'PHP Haversine Distance Engine & Shift Deadline Rules',
+    database: 'MySQL Attendance Ledger (Coordinates, Times & Actions)',
+    overview: 'Built a self-service employee portal where staff log in with their own credentials to record daily check-in and check-out punches. The application reads device GPS coordinates (latitude and longitude) to verify whether the employee is physically located inside the office geofence perimeter before confirming an in-office attendance record.',
+    architecture: 'Built with a responsive web interface that authenticates employee logins and requests device GPS coordinates via the HTML5 Geolocation API. A PHP backend validates latitude/longitude distance against authorized office coordinates (within a 100-meter geofence radius) and checks punch timestamps against morning (9:30 AM) and afternoon (2:00 PM) deadlines. Commits verified check-in and check-out events to a MySQL audit ledger.',
+    incidentSolved: 'Hardest Bug Solved (Handling GPS Drift & Inaccurate Device Coordinates): Indoor mobile browsers sometimes reported erratic GPS coordinates with large accuracy errors. Solved by implementing a device accuracy radius check and a 100-meter perimeter buffer to prevent false out-of-office rejections for legitimate staff.',
+    impact: 'Eliminated proxy attendance and buddy punching, provided automated check-in and check-out verification, and cut monthly HR payroll reconciliation from days to minutes.',
+    blueprint: '<div class="blueprint-flow"><div class="blueprint-step"><span class="blueprint-step-num mono">01</span><div class="blueprint-step-desc"><strong>Employee Login:</strong> Staff logs into their own dashboard to request Check-In or Check-Out.</div></div><div class="blueprint-step"><span class="blueprint-step-num mono">02</span><div class="blueprint-step-desc"><strong>GPS Geofencing:</strong> Reads latitude & longitude to verify employee is within 100m of office HQ.</div></div><div class="blueprint-step"><span class="blueprint-step-num mono">03</span><div class="blueprint-step-desc"><strong>MySQL Ledger:</strong> Checks shift cutoff rules (or On-Duty permit) and commits verified attendance.</div></div></div>'
   }
 };
 
@@ -280,6 +304,14 @@ function initProjectModals() {
     document.getElementById('modal-project-arch').textContent = data.architecture;
     document.getElementById('modal-project-incident').textContent = data.incidentSolved;
     document.getElementById('modal-project-impact').textContent = data.impact;
+
+    // Frontend, Backend & Database Architecture Stack Badges
+    const frontEl = document.getElementById('modal-arch-frontend');
+    const backEl = document.getElementById('modal-arch-backend');
+    const dbEl = document.getElementById('modal-arch-database');
+    if (frontEl) frontEl.textContent = data.frontend || 'Modern Web Interface';
+    if (backEl) backEl.textContent = data.backend || 'Application Logic Engine';
+    if (dbEl) dbEl.textContent = data.database || 'Database Storage';
 
     // Optional External Links
     const githubBtn = document.getElementById('modal-project-github');
@@ -494,10 +526,16 @@ function showToast(message) {
   container.appendChild(toast);
 
   setTimeout(() => {
-    toast.style.opacity = '0';
-    toast.style.transform = 'translateY(10px)';
-    toast.style.transition = 'all 0.3s ease';
-    setTimeout(() => toast.remove(), 300);
+    if (toast && toast.style) {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateY(10px)';
+      toast.style.transition = 'all 0.3s ease';
+    }
+    setTimeout(() => {
+      if (toast && typeof toast.remove === 'function') {
+        toast.remove();
+      }
+    }, 300);
   }, 3200);
 }
 
@@ -1019,14 +1057,14 @@ function initFlowchartPlayground() {
     terminal.scrollTop = terminal.scrollHeight;
   }
 
-    function escapeXml(unsafe) {
-      return String(unsafe || '')
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&apos;');
-    }
+  function escapeXml(unsafe) {
+    return String(unsafe || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&apos;');
+  }
 
   function truncateText(str, maxLen = 26) {
     if (!str) return '';
@@ -1040,38 +1078,39 @@ function initFlowchartPlayground() {
     for (let i = 0; i < lines.length; i++) {
       const rawLine = lines[i];
       const trimmed = rawLine.trim();
-      if (!trimmed || trimmed.startsWith('#')) continue;
+      if (!trimmed || trimmed.startsWith('#') || trimmed.startsWith('//')) continue;
 
-      const indentMatch = rawLine.match(/^(\s*)/);
+      const expandedLine = rawLine.replace(/\t/g, '    ');
+      const indentMatch = expandedLine.match(/^(\s*)/);
       const indent = indentMatch ? indentMatch[1].length : 0;
 
       let type = 'process';
       let label = trimmed;
       let subtype = '';
 
-      if (trimmed.startsWith('def ')) {
+      if (trimmed.startsWith('def ') || trimmed.startsWith('function ')) {
         type = 'start';
-        const m = trimmed.match(/^def\s+([a-zA-Z0-9_]+)\s*\((.*?)\):?/);
-        label = m ? `Start: ${ m[1] } ()` : 'Start';
+        const m = trimmed.match(/^(?:def|function)\s+([a-zA-Z0-9_]+)\s*\((.*?)\):?/);
+        label = m ? `Start: ${m[1]}()` : 'Start';
         subtype = m && m[2] ? m[2] : '';
-      } else if (trimmed.startsWith('if ')) {
+      } else if (/^if[\s(]/.test(trimmed)) {
         type = 'if';
-        label = trimmed.replace(/^if\s+/, '').replace(/:$/, '').trim();
-      } else if (trimmed.startsWith('elif ')) {
+        label = trimmed.replace(/^if\s*/, '').replace(/[:{]$/, '').trim();
+      } else if (/^(?:elif|else\s+if)[\s(]/.test(trimmed)) {
         type = 'elif';
-        label = trimmed.replace(/^elif\s+/, '').replace(/:$/, '').trim();
-      } else if (trimmed.startsWith('else:')) {
+        label = trimmed.replace(/^(?:elif|else\s+if)\s*/, '').replace(/[:{]$/, '').trim();
+      } else if (/^else(?:\s*[:{]|\s*$)/.test(trimmed)) {
         type = 'else';
         label = 'else';
-      } else if (trimmed.startsWith('while ')) {
+      } else if (/^while[\s(]/.test(trimmed)) {
         type = 'while';
-        label = trimmed.replace(/^while\s+/, '').replace(/:$/, '').trim();
-      } else if (trimmed.startsWith('for ')) {
+        label = trimmed.replace(/^while\s*/, '').replace(/[:{]$/, '').trim();
+      } else if (/^for[\s(]/.test(trimmed)) {
         type = 'for';
-        label = trimmed.replace(/^for\s+/, '').replace(/:$/, '').trim();
+        label = trimmed.replace(/^for\s*/, '').replace(/[:{]$/, '').trim();
       } else if (trimmed.startsWith('return')) {
         type = 'return';
-        label = trimmed;
+        label = trimmed.replace(/;$/, '');
       } else if (trimmed === 'break' || trimmed === 'continue' || trimmed === 'pass') {
         type = 'control';
         label = trimmed;
@@ -1118,43 +1157,34 @@ function initFlowchartPlayground() {
             body: body
           });
         } else if (tok.type === 'if') {
-          const cond = tok.label;
-          const ifIndent = tok.indent;
-          idx++;
-          const bodyIndent = idx < tokens.length && tokens[idx].indent > ifIndent ? tokens[idx].indent : ifIndent + 4;
-          const trueBranch = parseBlock(bodyIndent);
-          const falseBranch = [];
+          function parseIfChain(currentTok) {
+            const cond = currentTok.label;
+            const chainIndent = currentTok.indent;
+            idx++;
+            const bodyIndent = idx < tokens.length && tokens[idx].indent > chainIndent ? tokens[idx].indent : chainIndent + 2;
+            const trueBranch = parseBlock(bodyIndent);
+            let falseBranch = [];
 
-          while (idx < tokens.length && tokens[idx].indent === ifIndent) {
-            if (tokens[idx].type === 'elif') {
-              const elifTok = tokens[idx];
-              idx++;
-              const elifBodyIndent = idx < tokens.length && tokens[idx].indent > ifIndent ? tokens[idx].indent : ifIndent + 4;
-              const elifBranch = parseBlock(elifBodyIndent);
-              falseBranch.push({
-                type: 'if',
-                condition: elifTok.label,
-                trueBranch: elifBranch,
-                falseBranch: []
-              });
-              break;
-            } else if (tokens[idx].type === 'else') {
-              idx++;
-              const elseBodyIndent = idx < tokens.length && tokens[idx].indent > ifIndent ? tokens[idx].indent : ifIndent + 4;
-              const elseBranch = parseBlock(elseBodyIndent);
-              falseBranch.push(...elseBranch);
-              break;
-            } else {
-              break;
+            if (idx < tokens.length && tokens[idx].indent === chainIndent) {
+              if (tokens[idx].type === 'elif') {
+                const nextTok = tokens[idx];
+                falseBranch = [parseIfChain(nextTok)];
+              } else if (tokens[idx].type === 'else') {
+                idx++;
+                const elseBodyIndent = idx < tokens.length && tokens[idx].indent > chainIndent ? tokens[idx].indent : chainIndent + 2;
+                falseBranch = parseBlock(elseBodyIndent);
+              }
             }
+
+            return {
+              type: 'if',
+              condition: cond,
+              trueBranch: trueBranch,
+              falseBranch: falseBranch
+            };
           }
 
-          block.push({
-            type: 'if',
-            condition: cond,
-            trueBranch: trueBranch,
-            falseBranch: falseBranch
-          });
+          block.push(parseIfChain(tok));
         } else if (tok.type === 'while' || tok.type === 'for') {
           const loopType = tok.type;
           const cond = tok.label;
@@ -1451,15 +1481,15 @@ function initFlowchartPlayground() {
 
             if (i < list.length - 1 || !trueReturns) {
               const nextY = Math.max(diamondBottom + 40, trueEndY + 30);
-              drawOrthogonalArrow(`M ${ parentX } ${ diamondBottom } L ${ parentX } ${ nextY } `, '#EF4444', 'flow-arrow-red');
+              drawOrthogonalArrow(`M ${parentX} ${diamondBottom} L ${parentX} ${nextY} `, '#EF4444', 'flow-arrow-red');
               drawLabel(parentX + 8, diamondBottom + 18, '[False]', '#EF4444');
 
               if (!trueReturns) {
-                drawOrthogonalArrow(`M ${ lx } ${ trueEndY } L ${ lx } ${ nextY } L ${ parentX } ${ nextY } `, '#94A3B8', 'flow-arrow');
+                drawOrthogonalArrow(`M ${lx} ${trueEndY} L ${lx} ${nextY} L ${parentX} ${nextY} `, '#94A3B8', 'flow-arrow');
               }
               y = nextY;
             } else {
-              drawOrthogonalArrow(`M ${ parentX } ${ diamondBottom } L ${ parentX } ${ diamondBottom + 32 } `, '#EF4444', 'flow-arrow-red');
+              drawOrthogonalArrow(`M ${parentX} ${diamondBottom} L ${parentX} ${diamondBottom + 32} `, '#EF4444', 'flow-arrow-red');
               drawLabel(parentX + 8, diamondBottom + 18, '[False]', '#EF4444');
               y = diamondBottom + 32;
             }
@@ -1468,7 +1498,7 @@ function initFlowchartPlayground() {
           const loopTop = y;
           const loopH = 56;
           const loopW = 200;
-          const loopBottom = drawLoop(`${ item.loopType } ${ item.condition } `, parentX, loopTop);
+          const loopBottom = drawLoop(`${item.loopType} ${item.condition} `, parentX, loopTop);
           const loopMidY = loopTop + loopH / 2;
 
           drawArrow(parentX, loopBottom, parentX, loopBottom + 30, '#10B981', 'flow-arrow-green');
@@ -1478,11 +1508,11 @@ function initFlowchartPlayground() {
           const bodyEndY = renderList(item.body, bodyStartY, parentX, false);
 
           const loopBackX = Math.max(25, parentX - 150);
-          drawOrthogonalArrow(`M ${ parentX } ${ bodyEndY } L ${ loopBackX } ${ bodyEndY } L ${ loopBackX } ${ loopMidY } L ${ parentX - loopW / 2 } ${ loopMidY } `, '#4F46E5', 'flow-arrow');
+          drawOrthogonalArrow(`M ${parentX} ${bodyEndY} L ${loopBackX} ${bodyEndY} L ${loopBackX} ${loopMidY} L ${parentX - loopW / 2} ${loopMidY} `, '#4F46E5', 'flow-arrow');
 
           const exitX = Math.min(width - 25, parentX + 150);
           const exitY = bodyEndY + 35;
-          drawOrthogonalArrow(`M ${ parentX + loopW / 2 } ${ loopMidY } L ${ exitX } ${ loopMidY } L ${ exitX } ${ exitY } L ${ parentX } ${ exitY } `, '#EF4444', 'flow-arrow-red');
+          drawOrthogonalArrow(`M ${parentX + loopW / 2} ${loopMidY} L ${exitX} ${loopMidY} L ${exitX} ${exitY} L ${parentX} ${exitY} `, '#EF4444', 'flow-arrow-red');
           drawLabel(exitX - 50, loopMidY - 6, '[False: Exit]', '#EF4444');
 
           if (i < list.length - 1) {
@@ -1550,29 +1580,48 @@ function initFlowchartPlayground() {
     }
   });
 
-  // When user edits the textarea, switch dropdown to "custom"
+  // Live debounced auto-rendering as code is typed or pasted
+  let flowchartDebounceTimer = null;
   codeInput.addEventListener('input', () => {
     if (templateSelect.value !== 'custom') {
       templateSelect.value = 'custom';
     }
+    clearTimeout(flowchartDebounceTimer);
+    flowchartDebounceTimer = setTimeout(() => {
+      renderCurrentCode(false);
+    }, 200);
+  });
+
+  codeInput.addEventListener('paste', () => {
+    if (templateSelect.value !== 'custom') {
+      templateSelect.value = 'custom';
+    }
+    clearTimeout(flowchartDebounceTimer);
+    flowchartDebounceTimer = setTimeout(() => {
+      renderCurrentCode(false);
+    }, 80);
   });
 
   // When user clicks the render button
   renderBtn.addEventListener('click', () => {
+    clearTimeout(flowchartDebounceTimer);
     renderCurrentCode(true);
   });
 }
 
 /* --------------------------------------------------------------------------
-   Sub-Playground 4: Workforce In-Office & Out-of-Office Policy Engine
+   Sub-Playground 4: Workforce Geofenced Check-In & Check-Out Policy Engine
    -------------------------------------------------------------------------- */
 function initWorkforcePlayground() {
   const empSelect = document.getElementById('workforce-emp-select');
-  const modeSelect = document.getElementById('workforce-mode-select');
+  const actionSelect = document.getElementById('workforce-action-select');
+  const locationSelect = document.getElementById('workforce-location-select');
   const timeSelect = document.getElementById('workforce-time-select');
+  const detectGpsBtn = document.getElementById('workforce-detect-gps-btn');
   const punchBtn = document.getElementById('workforce-punch-btn');
   const terminal = document.getElementById('workforce-terminal');
   const ledgerTbody = document.getElementById('workforce-ledger-tbody');
+  const currentEmpSpan = document.getElementById('workforce-current-emp');
 
   if (!punchBtn || !terminal) return;
 
@@ -1584,113 +1633,146 @@ function initWorkforcePlayground() {
     terminal.scrollTop = terminal.scrollHeight;
   }
 
+  // Update session label on employee change
+  if (empSelect && currentEmpSpan) {
+    empSelect.addEventListener('change', () => {
+      const selectedEmpOpt = empSelect.options[empSelect.selectedIndex];
+      const empName = selectedEmpOpt.getAttribute('data-name');
+      const empId = empSelect.value;
+      currentEmpSpan.textContent = `${empName} (${empId})`;
+      appendTerminal(`<span class="terminal-prompt">$</span> [SESSION SWITCH] Active employee login changed to: <strong>${empName}</strong> (${empId}).`);
+    });
+  }
+
+  // Live device GPS detection
+  if (detectGpsBtn) {
+    detectGpsBtn.addEventListener('click', () => {
+      appendTerminal(`<span class="terminal-prompt">$</span> [GPS SENSOR] Querying browser navigator.geolocation...`);
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            const lat = pos.coords.latitude.toFixed(5);
+            const lng = pos.coords.longitude.toFixed(5);
+            const acc = pos.coords.accuracy ? pos.coords.accuracy.toFixed(1) : '15.0';
+            appendTerminal(`<span class="terminal-success">[GPS HARDWARE OK] Live coordinates acquired: Lat ${lat}° N, Long ${lng}° E (Accuracy: ±${acc}m).</span>`);
+            showToast(`GPS Acquired: ${lat}° N, ${lng}° E`);
+          },
+          (err) => {
+            appendTerminal(`<span class="terminal-warning">[GPS NOTICE] Browser location permission not granted or running offline (${err.message || 'code ' + err.code}).</span>`);
+            appendTerminal(`<span class="terminal-prompt">$</span> [FALLBACK SIMULATION] Office HQ coordinates calibrated: Lat 12.9716° N, Long 77.5946° E.`);
+            showToast('Simulated GPS coordinates calibrated.');
+          },
+          { timeout: 4000 }
+        );
+      } else {
+        appendTerminal(`<span class="terminal-warning">[GPS SENSOR] Geolocation API unavailable on this device. Using calibrated Office HQ coordinates.</span>`);
+      }
+    });
+  }
+
   punchBtn.addEventListener('click', () => {
     const selectedEmpOpt = empSelect.options[empSelect.selectedIndex];
     const empId = empSelect.value;
     const empName = selectedEmpOpt.getAttribute('data-name');
     const empRole = selectedEmpOpt.getAttribute('data-role');
 
-    const mode = modeSelect.value;
+    const action = actionSelect ? actionSelect.value : 'check_in';
+    const actionLabel = action === 'check_in' ? 'Check-In' : 'Check-Out';
+
+    const selectedLocOpt = locationSelect.options[locationSelect.selectedIndex];
+    const locMode = locationSelect.value;
+    const lat = selectedLocOpt.getAttribute('data-lat') || '12.9716';
+    const lng = selectedLocOpt.getAttribute('data-lng') || '77.5946';
+    const distStr = selectedLocOpt.getAttribute('data-dist') || '18m';
+
     const selectedTimeOpt = timeSelect.options[timeSelect.selectedIndex];
     const punchTime = timeSelect.value;
-    const punchLabel = selectedTimeOpt.getAttribute('data-label');
+    const punchLabel = selectedTimeOpt.getAttribute('data-label') || punchTime;
 
-    appendTerminal(`<span class="terminal-prompt">$</span> [POLICY ENGINE INGEST] Employee: ${empName} (${empId}, ${empRole}) | Mode: ${mode.toUpperCase()}`);
+    appendTerminal(`<span class="terminal-prompt">$</span> [LOGIN SESSION] Authenticated employee: <strong>${empName}</strong> (${empId}, ${empRole})`);
+    appendTerminal(`<span class="terminal-prompt">$</span> [PUNCH REQUEST] Action: <strong>${actionLabel.toUpperCase()}</strong> at ${punchLabel}`);
+    appendTerminal(`<span class="terminal-prompt">$</span> [GPS GEOFENCE] Device coordinates: Lat <strong>${lat}° N</strong>, Long <strong>${lng}° E</strong>`);
 
-    if (mode === 'in_office') {
-      if (punchTime === '09:12:00') {
-        appendTerminal(`<span class="terminal-prompt">$</span> [SHIFT BOUNDARY] Active: Shift 1 Morning (Cutoff: 09:30:00 AM)`);
-        appendTerminal(`<span class="terminal-success">[POLICY PASS] Punch time 09:12:00 AM is 18 minutes before shift deadline.</span>`);
-        appendTerminal(`<span class="terminal-success">[LEDGER COMMIT] Status = ON TIME &bull; Full morning shift credit logged to MySQL attendance ledger.</span>`);
+    let punchStatus = 'ON TIME';
+    let badgeClass = 'badge-present';
+    let ruleDesc = 'Inside 100m office perimeter';
+    let isRejected = false;
 
-        if (ledgerTbody) {
-          const row = document.createElement('tr');
-          row.innerHTML = `
-            <td style="font-weight: 600;">${empName}</td>
-            <td>In-Office</td>
-            <td class="mono">09:12:00</td>
-            <td style="font-size: 0.75rem; color: #10B981;">Passed 09:30 Cutoff (-18m)</td>
-            <td><span class="badge-present">ON TIME</span></td>
-          `;
-          ledgerTbody.insertBefore(row, ledgerTbody.firstChild);
+    if (locMode === 'office_inside') {
+      appendTerminal(`<span class="terminal-success">[GEOFENCE PASS] Distance from Office HQ: ${distStr} (Within 100m geofence radius). Physical presence verified ✓</span>`);
+
+      if (action === 'check_in') {
+        if (punchTime === '09:12:00') {
+          appendTerminal(`<span class="terminal-prompt">$</span> [SHIFT CHECK] Shift 1 Morning (Cutoff: 09:30:00 AM)`);
+          appendTerminal(`<span class="terminal-success">[POLICY PASS] Punch time 09:12 AM is 18 minutes before shift deadline.</span>`);
+          appendTerminal(`<span class="terminal-success">[MYSQL COMMIT] Status = ON TIME &bull; Check-in logged with GPS coordinates.</span>`);
+          punchStatus = 'ON TIME';
+          badgeClass = 'badge-present';
+          ruleDesc = 'Passed 09:30 Cutoff (-18m)';
+        } else if (punchTime === '09:47:30') {
+          appendTerminal(`<span class="terminal-prompt">$</span> [SHIFT CHECK] Shift 1 Morning (Cutoff: 09:30:00 AM)`);
+          appendTerminal(`<span class="terminal-warning">[DEADLINE BREACH] Punch time 09:47 AM is +17.5 mins past cutoff. Grace period expired.</span>`);
+          appendTerminal(`<span class="terminal-error">[AUDIT FLAG] Status = LATE (PENDING) &bull; Supervisor review required.</span>`);
+          punchStatus = 'LATE (PENDING)';
+          badgeClass = 'badge-late';
+          ruleDesc = 'Exceeded 09:30 Cutoff (+17m)';
+        } else if (punchTime === '13:50:00') {
+          appendTerminal(`<span class="terminal-prompt">$</span> [SHIFT CHECK] Shift 2 Afternoon (Cutoff: 02:00:00 PM)`);
+          appendTerminal(`<span class="terminal-success">[POLICY PASS] Punch time 01:50 PM is 10 minutes before afternoon cutoff.</span>`);
+          appendTerminal(`<span class="terminal-success">[MYSQL COMMIT] Status = ON TIME &bull; Afternoon shift credit committed.</span>`);
+          punchStatus = 'ON TIME';
+          badgeClass = 'badge-present';
+          ruleDesc = 'Passed 14:00 Cutoff (-10m)';
+        } else {
+          appendTerminal(`<span class="terminal-prompt">$</span> [SHIFT CHECK] Evening Check-In at 06:05 PM.`);
+          appendTerminal(`<span class="terminal-success">[MYSQL COMMIT] Status = ON TIME &bull; Evening roster recorded.</span>`);
+          punchStatus = 'ON TIME';
+          badgeClass = 'badge-present';
+          ruleDesc = 'Evening Roster Active';
         }
-
-        showToast(`Verified: ${empName} is ON TIME (Morning Shift).`);
-      } else if (punchTime === '09:47:30') {
-        appendTerminal(`<span class="terminal-prompt">$</span> [SHIFT BOUNDARY] Active: Shift 1 Morning (Cutoff: 09:30:00 AM)`);
-        appendTerminal(`<span class="terminal-warning">[DEADLINE BREACH] Punch time 09:47:30 AM is +17.5 minutes past cutoff. Grace period expired.</span>`);
-        appendTerminal(`<span class="terminal-error">[AUDIT FLAG] Status = LATE (PENDING APPROVAL) &bull; Department Head review notification dispatched.</span>`);
-
-        if (ledgerTbody) {
-          const row = document.createElement('tr');
-          row.innerHTML = `
-            <td style="font-weight: 600;">${empName}</td>
-            <td>In-Office</td>
-            <td class="mono">09:47:30</td>
-            <td style="font-size: 0.75rem; color: #B45309;">Exceeded 09:30 Cutoff (+17m)</td>
-            <td><span class="badge-late">LATE (PENDING)</span></td>
-          `;
-          ledgerTbody.insertBefore(row, ledgerTbody.firstChild);
-        }
-
-        showToast(`Late Check-in Flagged: ${empName} marked LATE (PENDING APPROVAL).`);
-      } else if (punchTime === '13:50:00') {
-        appendTerminal(`<span class="terminal-prompt">$</span> [SHIFT BOUNDARY] Active: Shift 2 Afternoon (Cutoff: 02:00:00 PM)`);
-        appendTerminal(`<span class="terminal-success">[POLICY PASS] Punch time 01:50:00 PM is 10 minutes before afternoon cutoff.</span>`);
-        appendTerminal(`<span class="terminal-success">[LEDGER COMMIT] Status = ON TIME &bull; Full afternoon shift credit committed.</span>`);
-
-        if (ledgerTbody) {
-          const row = document.createElement('tr');
-          row.innerHTML = `
-            <td style="font-weight: 600;">${empName}</td>
-            <td>In-Office</td>
-            <td class="mono">13:50:00</td>
-            <td style="font-size: 0.75rem; color: #10B981;">Passed 14:00 Cutoff (-10m)</td>
-            <td><span class="badge-present">ON TIME</span></td>
-          `;
-          ledgerTbody.insertBefore(row, ledgerTbody.firstChild);
-        }
-
-        showToast(`Verified: ${empName} is ON TIME (Afternoon Shift).`);
       } else {
-        appendTerminal(`<span class="terminal-prompt">$</span> [SHIFT BOUNDARY] Active: Shift 2 Afternoon (Cutoff: 02:00:00 PM)`);
-        appendTerminal(`<span class="terminal-warning">[DEADLINE BREACH] Punch time 02:25:00 PM is +25 minutes past afternoon cutoff.</span>`);
-        appendTerminal(`<span class="terminal-error">[AUDIT FLAG] Status = LATE (PENDING APPROVAL) &bull; Flagged for clinic operations reconciliation.</span>`);
-
-        if (ledgerTbody) {
-          const row = document.createElement('tr');
-          row.innerHTML = `
-            <td style="font-weight: 600;">${empName}</td>
-            <td>In-Office</td>
-            <td class="mono">14:25:00</td>
-            <td style="font-size: 0.75rem; color: #B45309;">Exceeded 14:00 Cutoff (+25m)</td>
-            <td><span class="badge-late">LATE (PENDING)</span></td>
-          `;
-          ledgerTbody.insertBefore(row, ledgerTbody.firstChild);
-        }
-
-        showToast(`Late Check-in Flagged: ${empName} marked LATE (PENDING APPROVAL).`);
+        // Check-Out
+        appendTerminal(`<span class="terminal-success">[CHECK-OUT PASS] Shift ended. Total work duration: 8.5 hours recorded.</span>`);
+        appendTerminal(`<span class="terminal-success">[MYSQL COMMIT] Status = CHECK-OUT OK &bull; Exit timestamp saved with GPS coordinates.</span>`);
+        punchStatus = 'CHECK-OUT OK';
+        badgeClass = 'badge-checkout';
+        ruleDesc = 'Full 8.5h Shift Completed';
       }
+    } else if (locMode === 'office_outside') {
+      appendTerminal(`<span class="terminal-error">[GEOFENCE BREACH ✗] Distance from Office HQ: ${distStr} (Exceeds 100m perimeter). Employee is outside office!</span>`);
+      appendTerminal(`<span class="terminal-error">[PUNCH REJECTED] In-office attendance requires physical presence inside office perimeter or approved On-Duty permit.</span>`);
+      punchStatus = 'REJECTED';
+      badgeClass = 'badge-rejected';
+      ruleDesc = `Geofence Alert (${distStr} away)`;
+      isRejected = true;
     } else {
-      // Out-of-Office / On-Duty (OD)
+      // Out-of-Office / Approved On-Duty (OD)
       const odToken = `OD-AUTH-${Math.floor(1000 + Math.random() * 9000)}`;
-      appendTerminal(`<span class="terminal-prompt">$</span> [TOKEN VALIDATION] Querying authorized On-Duty (OD) permits for today...`);
-      appendTerminal(`<span class="terminal-success">[OD AUTHORIZED] Valid token ${odToken} found &bull; Signed by Clinical Operations Director.</span>`);
-      appendTerminal(`<span class="terminal-success">[LEDGER COMMIT] Status = OD APPROVED &bull; Full duty credit recorded with zero shift cutoff penalty.</span>`);
+      appendTerminal(`<span class="terminal-prompt">$</span> [OD VALIDATION] Querying authorized On-Duty (OD) permits for today...`);
+      appendTerminal(`<span class="terminal-success">[OD AUTHORIZED] Valid token ${odToken} verified &bull; Approved by Operations Lead.</span>`);
+      appendTerminal(`<span class="terminal-success">[MYSQL COMMIT] Status = OD APPROVED &bull; Full duty credit recorded without geofence penalty.</span>`);
+      punchStatus = 'OD APPROVED';
+      badgeClass = 'badge-od';
+      ruleDesc = `Approved OD (${odToken})`;
+    }
 
-      if (ledgerTbody) {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-          <td style="font-weight: 600;">${empName}</td>
-          <td>Out-of-Office</td>
-          <td class="mono">${punchTime}</td>
-          <td style="font-size: 0.75rem; color: #4F46E5;">Approved OD (${odToken})</td>
-          <td><span class="badge-od">OD APPROVED</span></td>
-        `;
-        ledgerTbody.insertBefore(row, ledgerTbody.firstChild);
-      }
+    if (ledgerTbody) {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td style="font-weight: 600;">${empName} <span style="font-size: 0.7rem; color: var(--text-muted); display: block;">${empId}</span></td>
+        <td><span style="font-weight: 600; color: ${action === 'check_in' ? '#4F46E5' : '#10B981'};">${actionLabel}</span></td>
+        <td class="mono" style="font-size: 0.75rem;">${lat}° N, ${lng}° E</td>
+        <td class="mono">${punchLabel}</td>
+        <td style="font-size: 0.75rem; color: ${isRejected ? '#DC2626' : (locMode === 'office_inside' ? '#10B981' : '#4F46E5')};">${ruleDesc}</td>
+        <td><span class="${badgeClass}">${punchStatus}</span></td>
+      `;
+      ledgerTbody.insertBefore(row, ledgerTbody.firstChild);
+    }
 
-      showToast(`On-Duty Verified: ${empName} marked OD APPROVED without penalty.`);
+    if (isRejected) {
+      showToast(`Punch Blocked: Outside office geofence (${distStr}).`);
+    } else {
+      showToast(`Verified: ${empName} recorded ${actionLabel} (${punchStatus}).`);
     }
   });
 }

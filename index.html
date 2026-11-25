@@ -1898,19 +1898,221 @@
 
   <!-- Resume Preview Modal -->
   <div id="resume-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
-    <div class="modal-container" style="max-width: 900px;">
+    <div class="modal-container resume-modal-container">
       <div class="modal-header">
-        <h3 id="resume-modal-title" class="modal-title">Chanthani N R — Resume</h3>
-        <div style="display: flex; gap: 0.75rem; align-items: center;">
-          <a href="assets/Chanthani_resume.pdf" download="Chanthani_NR_Resume.pdf" class="btn btn-primary btn-sm">
-            Download PDF
+        <div>
+          <h3 id="resume-modal-title" class="modal-title">Chanthani N R — Resume</h3>
+        </div>
+        <div class="resume-header-actions">
+          <a href="assets/Chanthani_resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Open Fullscreen in Native PDF Viewer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            <span>Fullscreen ↗</span>
+          </a>
+          <a href="assets/Chanthani_resume.pdf" download="Chanthani_NR_Resume.pdf" class="btn btn-primary btn-sm" title="Download PDF file">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download PDF</span>
           </a>
           <button id="resume-modal-close" class="modal-close-btn" aria-label="Close resume viewer">&times;</button>
         </div>
       </div>
       <div class="modal-body" style="padding: 1.25rem;">
-        <div class="resume-frame-container">
-          <iframe src="assets/Chanthani_resume.pdf#toolbar=1" title="Chanthani Resume PDF"></iframe>
+        <!-- View Toggle Bar: Formatted Mobile vs Original PDF -->
+        <div class="resume-view-toggle-bar">
+          <button class="resume-toggle-btn active" data-resume-view="formatted" type="button">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>Mobile-Friendly View</span>
+          </button>
+          <button class="resume-toggle-btn" data-resume-view="document" type="button">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+            <span>Original 1-Page PDF</span>
+          </button>
+        </div>
+
+        <!-- PANE 1: Responsive Formatted Resume Sheet -->
+        <div id="resume-pane-formatted" class="resume-pane">
+          <div class="resume-formatted-sheet">
+            <div class="resume-sheet-header">
+              <h2 class="resume-sheet-name">Chanthani N R</h2>
+              <div class="resume-sheet-role mono">// SOFTWARE DEVELOPER &bull; DATA &amp; SYSTEMS ENGINEER</div>
+              <div class="resume-contact-pills">
+                <span class="resume-contact-item">📍 Bengaluru, India</span>
+                <span class="reach-dot">•</span>
+                <a href="tel:+919380661726" class="resume-contact-item">📞 +91 9380661726</a>
+                <span class="reach-dot">•</span>
+                <a href="mailto:chanthanirajiraj2003@gmail.com" class="resume-contact-item">✉️ chanthanirajiraj2003@gmail.com</a>
+                <span class="reach-dot">•</span>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="resume-contact-item">🔗 LinkedIn</a>
+                <span class="reach-dot">•</span>
+                <a href="https://github.com/Chanthani-N-R-31" target="_blank" rel="noopener noreferrer" class="resume-contact-item">💻 GitHub</a>
+              </div>
+            </div>
+
+            <!-- Professional Summary -->
+            <div class="resume-section">
+              <div class="resume-section-title">// PROFESSIONAL SUMMARY</div>
+              <p class="resume-summary-text">
+                Software Developer with experience building full-stack web applications, database-driven systems, and role-based access control. Proficient in React, Next.js, TypeScript, Python, SQL, and Firebase, with additional experience in data analytics and machine learning workflows.
+              </p>
+            </div>
+
+            <!-- Experience -->
+            <div class="resume-section">
+              <div class="resume-section-title">// PROFESSIONAL EXPERIENCE</div>
+              
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <span class="resume-entry-title">Software Developer</span>
+                  <span class="resume-entry-date">Mar 2026 – Present</span>
+                </div>
+                <div class="resume-entry-sub">Sixs Sports Business &amp; Solutions Inc. &bull; Bengaluru, India</div>
+                <ul class="resume-entry-bullets">
+                  <li>Develop data-driven applications supporting clinical operations, sports science assessments, scheduling, inventory, and reporting workflows.</li>
+                  <li>Build application features and database integrations to support data processing, validation, and operational automation.</li>
+                  <li>Used Athlete Management System (AMS) to analyze performance test data for <strong>700+ student athletes</strong>, calculating physical derivatives and generating <strong>3-tier benchmark ranking reports</strong> assisting the <strong>Government of Karnataka (DYES)</strong> state talent selection trials.</li>
+                  <li>Implement role-based access control (RBAC) and collaborate with stakeholders to translate operational requirements into production software features.</li>
+                </ul>
+              </div>
+
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <span class="resume-entry-title">Data and Development Analyst Intern</span>
+                  <span class="resume-entry-date">Dec 2025 – Feb 2026</span>
+                </div>
+                <div class="resume-entry-sub">Sixs Sports Business &amp; Solutions Inc. &bull; Bengaluru, India</div>
+                <ul class="resume-entry-bullets">
+                  <li>Built a Clinical Management System using Next.js and Firebase to automate patient scheduling, billing, and facility operations based on requirements gathered from clinical stakeholders.</li>
+                  <li>Developed a dual-app ecosystem for physiotherapists and patients, integrating Zoho Mail for transactional notifications.</li>
+                  <li>Configured Firestore security rules and role-based authentication to protect sensitive clinical data and control application access.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="resume-section">
+              <div class="resume-section-title">// TECHNICAL SKILLS</div>
+              <div class="resume-skill-group">
+                <span class="resume-skill-label">Languages:</span> Python, SQL, JavaScript, TypeScript, HTML, CSS
+              </div>
+              <div class="resume-skill-group">
+                <span class="resume-skill-label">Frontend:</span> React, Next.js, Vite, React Router, Tailwind CSS, Framer Motion
+              </div>
+              <div class="resume-skill-group">
+                <span class="resume-skill-label">Backend &amp; Databases:</span> Node.js, Flask, PHP, Firebase, Firestore, MySQL, PostgreSQL, Supabase, REST APIs, PDO
+              </div>
+              <div class="resume-skill-group">
+                <span class="resume-skill-label">Data Analytics &amp; ML:</span> Pandas, NumPy, Matplotlib, EDA, Data Preprocessing, Feature Engineering, CNN, ANN, NLP
+              </div>
+              <div class="resume-skill-group">
+                <span class="resume-skill-label">Tools &amp; Platforms:</span> Git, GitHub, Power BI, Excel, RDKit, DGL-LifeSci, Docker
+              </div>
+            </div>
+
+            <!-- Featured Projects -->
+            <div class="resume-section">
+              <div class="resume-section-title">// FEATURED PROJECTS</div>
+
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <span class="resume-entry-title">Centre for Sports Science Web Portal</span>
+                  <span class="resume-entry-date">React &bull; Vite &bull; PHP &bull; MySQL</span>
+                </div>
+                <ul class="resume-entry-bullets">
+                  <li>Developed a responsive multi-page website with reusable components for Home, Services, Pricing, About, and Contact pages.</li>
+                  <li>Integrated validated contact and inquiry forms with PHP/MySQL backend using PDO prepared statements.</li>
+                  <li>Resolved a production database connectivity incident by isolating five root causes across environment config, API paths, and rewrite rules.</li>
+                </ul>
+              </div>
+
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <span class="resume-entry-title">Sports Science Engine &amp; Clinic Scheduler</span>
+                  <span class="resume-entry-date">Next.js &bull; TypeScript &bull; MySQL</span>
+                </div>
+                <ul class="resume-entry-bullets">
+                  <li>Redesigned admin dashboard and developed inventory management interface backed by a relational MySQL schema.</li>
+                  <li>Built scheduler to assign patients and athletes to specialists based on availability, cutting manual overhead by 70%.</li>
+                  <li>Developed billing functionality for automated invoice generation, payment tracking, and financial reporting.</li>
+                </ul>
+              </div>
+
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <span class="resume-entry-title">Hostel Management System &amp; Gate Pass</span>
+                  <span class="resume-entry-date">Next.js &bull; TypeScript &bull; Supabase &bull; PostgreSQL</span>
+                </div>
+                <ul class="resume-entry-bullets">
+                  <li>Designed PostgreSQL migrations with role constraints, indexes, timestamp triggers, and automatic user creation.</li>
+                  <li>Implemented role-based dashboards with metadata-driven redirection and protected server-side routes.</li>
+                  <li>Automated bed allocation rules to completely prevent overbooked rooms.</li>
+                </ul>
+              </div>
+
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <span class="resume-entry-title">Molecular Structure Analysis &amp; Drug Discovery</span>
+                  <span class="resume-entry-date">Python &bull; RDKit &bull; DGL-LifeSci</span>
+                </div>
+                <ul class="resume-entry-bullets">
+                  <li>Integrated compound data from PubChem, ChEMBL, and GDSC2 into a unified processing pipeline.</li>
+                  <li>Extracted molecular fingerprints from SMILES structures and trained ML models predicting drug sensitivity with high accuracy.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div class="resume-section">
+              <div class="resume-section-title">// EDUCATION</div>
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <span class="resume-entry-title">St Joseph’s University</span>
+                  <span class="resume-entry-date">2024 – 2026</span>
+                </div>
+                <div class="resume-entry-sub">M.Sc. Big Data Analytics &bull; Bengaluru, India</div>
+              </div>
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <span class="resume-entry-title">St Joseph’s University</span>
+                  <span class="resume-entry-date">2021 – 2024</span>
+                </div>
+                <div class="resume-entry-sub">B.Sc. Physics, Mathematics and Electronics &bull; Bengaluru, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANE 2: Original 1-Page Document Preview (High-Res Vector/Retina PNG + Direct Fullscreen Link) -->
+        <div id="resume-pane-document" class="resume-pane" style="display: none;">
+          <div class="resume-doc-wrap">
+            <div class="resume-doc-helper-bar">
+              <span>High-Resolution Single-Page PDF Document</span>
+              <a href="assets/Chanthani_resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="padding: 0.25rem 0.55rem; font-size: 0.75rem;">
+                Open Fullscreen PDF ↗
+              </a>
+            </div>
+            <div class="resume-preview-img-container">
+              <a href="assets/Chanthani_resume.pdf" target="_blank" rel="noopener noreferrer" title="Tap to open full-resolution PDF document in a new tab">
+                <img src="assets/images/chanthani_resume_preview.png" alt="Chanthani N R Technical Resume - Full Page Document" class="resume-preview-img" loading="eager">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

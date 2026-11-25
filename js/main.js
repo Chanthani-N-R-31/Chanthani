@@ -393,10 +393,39 @@ function initResumeModal() {
   const resumeModal = document.getElementById('resume-modal');
   const openButtons = document.querySelectorAll('[data-open-resume]');
   const closeBtn = document.getElementById('resume-modal-close');
+  const toggleBtns = document.querySelectorAll('.resume-toggle-btn');
+  const paneFormatted = document.getElementById('resume-pane-formatted');
+  const paneDocument = document.getElementById('resume-pane-document');
 
   if (!resumeModal) return;
 
+  function switchResumeView(viewName) {
+    toggleBtns.forEach(btn => {
+      const isMatch = btn.getAttribute('data-resume-view') === viewName;
+      btn.classList.toggle('active', isMatch);
+    });
+
+    if (viewName === 'formatted') {
+      if (paneFormatted) paneFormatted.style.display = 'block';
+      if (paneDocument) paneDocument.style.display = 'none';
+    } else {
+      if (paneFormatted) paneFormatted.style.display = 'none';
+      if (paneDocument) paneDocument.style.display = 'block';
+    }
+  }
+
+  toggleBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const view = btn.getAttribute('data-resume-view');
+      switchResumeView(view);
+    });
+  });
+
   function openResume() {
+    // On mobile devices, default to the crystal-clear formatted mobile view
+    if (window.innerWidth <= 768) {
+      switchResumeView('formatted');
+    }
     resumeModal.classList.add('active');
     document.body.style.overflow = 'hidden';
   }

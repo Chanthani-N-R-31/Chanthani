@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initNavigation();
   initProjectFiltering();
+  initProjectsCarousel();
   initProjectModals();
   initDemoModal();
   initResumeModal();
@@ -134,11 +135,14 @@ function initRotatingSubtitles() {
 }
 
 /* ==========================================================================
-   4. Project Filtering
+   4. Project Filtering & Horizontal Carousel Showcase
    ========================================================================== */
+let updateCarouselStateFn = null;
+
 function initProjectFiltering() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
+  const track = document.getElementById('projects-track');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -147,24 +151,176 @@ function initProjectFiltering() {
 
       const filterValue = btn.getAttribute('data-filter');
 
+      // Reset track scroll position smoothly
+      if (track) {
+        track.scrollTo({ left: 0, behavior: 'smooth' });
+      }
+
       projectCards.forEach(card => {
         const categories = card.getAttribute('data-category')?.split(' ') || [];
-        if (filterValue === 'all' || categories.includes(filterValue)) {
+        const isMatch = filterValue === 'all' || categories.includes(filterValue);
+
+        if (isMatch) {
           card.style.display = 'flex';
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0) scale(1)';
-          }, 50);
+          card.classList.remove('animate-in');
+          void card.offsetWidth; // Force reflow to restart CSS animation
+          card.classList.add('animate-in');
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0) scale(1)';
         } else {
           card.style.opacity = '0';
-          card.style.transform = 'translateY(20px) scale(0.95)';
+          card.style.transform = 'translateY(16px) scale(0.95)';
           setTimeout(() => {
-            card.style.display = 'none';
-          }, 300);
+            if (!isMatch) card.style.display = 'none';
+          }, 250);
         }
       });
+
+      setTimeout(() => {
+        if (typeof updateCarouselStateFn === 'function') {
+          updateCarouselStateFn();
+        }
+      }, 300);
     });
   });
+}
+
+function initProjectsCarousel() {
+  const track = document.getElementById('projects-track');
+  if (!track) return;
+
+  const prevBtn = document.getElementById('projects-prev-btn');
+  const nextBtn = document.getElementById('projects-next-btn');
+  const counterEl = document.getElementById('projects-counter');
+  const progressBar = document.getElementById('projects-progress-bar');
+
+  function getVisibleCards() {
+    return Array.from(track.querySelectorAll('.project-card')).filter(c => c.style.display !== 'none');
+  }
+
+  function getScrollDistance() {
+    const visibleCards = getVisibleCards();
+    const firstVisibleCard = visibleCards[0];
+    const cardWidth = firstVisibleCard ? firstVisibleCard.offsetWidth : 440;
+    const gap = 28; // gap in px
+    return cardWidth + gap;
+  }
+
+  function scrollCarousel(direction) {
+    const distance = getScrollDistance();
+    track.scrollBy({
+      left: direction === 'next' ? distance : -distance,
+      behavior: 'smooth'
+    });
+  }
+
+  if (prevBtn) prevBtn.onclick = () => scrollCarousel('prev');
+  if (nextBtn) nextBtn.onclick = () => scrollCarousel('next');
+
+  function updateCarouselState() {
+    const visibleCards = getVisibleCards();
+    const total = visibleCards.length;
+    if (total === 0) return;
+
+    const maxScroll = track.scrollWidth - track.clientWidth;
+    let ratio = maxScroll > 0 ? (track.scrollLeft / maxScroll) : 0;
+    ratio = Math.max(0, Math.min(1, ratio));
+
+    // Active index calculation
+    const currentIndex = Math.min(total, Math.round(ratio * (total - 1)) + 1);
+
+    if (counterEl) {
+      counterEl.textContent = `${String(currentIndex).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
+    }
+
+    if (progressBar) {
+      const progressPercent = Math.max(14, Math.round(ratio * 100));
+      progressBar.style.width = `${progressPercent}%`;
+    }
+
+    const isAtStart = track.scrollLeft <= 15;
+    const isAtEnd = track.scrollLeft >= maxScroll - 15;
+
+    if (prevBtn) prevBtn.disabled = isAtStart;
+    if (nextBtn) nextBtn.disabled = isAtEnd;
+  }
+
+  updateCarouselStateFn = updateCarouselState;
+  track.addEventListener('scroll', updateCarouselState, { passive: true });
+  window.addEventListener('resize', updateCarouselState, { passive: true });
+
+  // Mouse Drag-To-Scroll (Smooth physics)
+  let isDown = false;
+  let startX = 0;
+  let scrollLeftStart = 0;
+  let hasDragged = false;
+
+  track.addEventListener('mousedown', (e) => {
+    // Ignore clicks on buttons or links
+    if (e.button !== 0 || e.target.closest('button') || e.target.closest('a')) return;
+    isDown = true;
+    hasDragged = false;
+    track.classList.add('is-dragging');
+    startX = e.pageX - track.offsetLeft;
+    scrollLeftStart = track.scrollLeft;
+  });
+
+  const stopDragging = () => {
+    if (!isDown) return;
+    isDown = false;
+    track.classList.remove('is-dragging');
+  };
+
+  track.addEventListener('mouseleave', stopDragging);
+  track.addEventListener('mouseup', stopDragging);
+
+  track.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - track.offsetLeft;
+    const walk = (x - startX) * 1.35;
+    if (Math.abs(walk) > 4) {
+      hasDragged = true;
+    }
+    track.scrollLeft = scrollLeftStart - walk;
+  });
+
+  // Prevent accidental clicks on card buttons when user was dragging
+  track.addEventListener('click', (e) => {
+    if (hasDragged) {
+      e.preventDefault();
+      e.stopPropagation();
+      hasDragged = false;
+    }
+  }, true);
+
+  // Horizontal Wheel Assist (Natural mouse wheel translation)
+  track.addEventListener('wheel', (e) => {
+    if (Math.abs(e.deltaY) > Math.abs(e.deltaX) && Math.abs(e.deltaY) > 8) {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      const atStart = track.scrollLeft <= 5 && e.deltaY < 0;
+      const atEnd = track.scrollLeft >= maxScroll - 5 && e.deltaY > 0;
+      if (!atStart && !atEnd && maxScroll > 0) {
+        e.preventDefault();
+        track.scrollLeft += e.deltaY * 0.95;
+      }
+    }
+  }, { passive: false });
+
+  // Keyboard navigation (Left / Right arrow keys)
+  track.setAttribute('tabindex', '0');
+  track.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      scrollCarousel('next');
+    } else if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      scrollCarousel('prev');
+    }
+  });
+
+  // Initial update
+  updateCarouselState();
 }
 
 /* ==========================================================================

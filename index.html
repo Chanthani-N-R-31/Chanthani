@@ -344,16 +344,13 @@
           <div class="carousel-nav-controls">
             <span class="carousel-counter mono" id="projects-counter">01 / 07</span>
             <div class="carousel-btn-group">
-              <button class="carousel-btn" id="projects-prev-btn" aria-label="Previous project"
-                title="Previous Project">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                  stroke-linejoin="round">
+              <button class="carousel-btn" id="projects-prev-btn" aria-label="Previous project" title="Previous Project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="15 18 9 12 15 6"></polyline>
                 </svg>
               </button>
               <button class="carousel-btn" id="projects-next-btn" aria-label="Next project" title="Next Project">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                  stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="9 18 15 12 9 6"></polyline>
                 </svg>
               </button>
@@ -375,522 +372,506 @@
         <div class="projects-carousel-wrapper" id="projects-carousel-wrapper">
           <!-- Horizontal Projects Track -->
           <div class="projects-track" id="projects-track">
-            <!-- Project 1: Centre for Sports Science Web Platform -->
-            <article class="project-card" data-category="fullstack healthcare">
-              <div class="project-media-wrap">
-                <img src="assets/images/sports_science_portal.jpg" alt="Centre for Sports Science Web Platform"
-                  class="project-img" loading="lazy">
-                <span class="project-overlay-badge">React • Vite • PHP • MySQL</span>
+          <!-- Project 1: Centre for Sports Science Web Platform -->
+          <article class="project-card" data-category="fullstack healthcare">
+            <div class="project-media-wrap">
+              <img src="assets/images/sports_science_portal.jpg" alt="Centre for Sports Science Web Platform"
+                class="project-img" loading="lazy">
+              <span class="project-overlay-badge">React • Vite • PHP • MySQL</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Centre for Sports Science Web Portal</h3>
+              <p class="project-desc">
+                A modern, fast multi-page website for a sports clinic with online service booking, treatment details,
+                and a validated patient inquiry form.
+              </p>
+
+              <!-- Standard Stack Breakdown -->
+              <div class="project-stack-breakdown">
+                <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">React 18 &amp;
+                    Vite</span></div>
+                <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">PHP REST
+                    API</span></div>
+                <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">MySQL</span>
+                </div>
               </div>
-              <div class="project-body">
-                <h3 class="project-title">Centre for Sports Science Web Portal</h3>
-                <p class="project-desc">
-                  A modern, fast multi-page website for a sports clinic with online service booking, treatment details,
-                  and a validated patient inquiry form.
+
+              <div class="how-it-works">
+                <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
+                <p class="how-it-works-text">Fast React frontend bundled with Vite for sub-second page loads, connected
+                  to a PHP API that validates user inputs and securely stores consultation requests in MySQL.</p>
+              </div>
+
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Built with React and Vite so pages load instantly on both mobile phones and laptops.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Connected a PHP and MySQL backend with safe database queries to protect patient inquiries from
+                    spam and errors.</span>
+                </li>
+              </ul>
+              <div class="project-takeaway">
+                <span class="takeaway-label mono">// HARDEST BUG SOLVED:</span>
+                Fixed a live-server connectivity issue where contact forms failed to save due to mismatched
+                database configuration settings.
+              </div>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Vite</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-modal-btn" data-open-modal="sports-science-website">
+                    <span>Architecture Details &rarr;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Sports Science Engine -->
+          <article class="project-card" data-category="fullstack healthcare systems">
+            <div class="project-media-wrap">
+              <img src="assets/images/sports_science_dashboard.jpg" alt="Sports Science Engine & Scheduler"
+                class="project-img" loading="lazy">
+              <span class="project-overlay-badge">Next.js • JavaScript • MySQL</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Clinic Operations &amp; Doctor Scheduler</h3>
+              <p class="project-desc">
+                An all-in-one clinic management tool to manage doctor calendars, medical inventory, and patient billing
+                without paperwork.
+              </p>
+
+              <!-- Standard Stack Breakdown -->
+              <div class="project-stack-breakdown">
+                <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">Next.js 14
+                    &amp; React</span></div>
+                <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">Node.js Calendar
+                    Engine</span></div>
+                <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">MySQL</span>
+                </div>
+              </div>
+
+              <div class="how-it-works">
+                <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
+                <p class="how-it-works-text">Next.js dashboard with a smart calendar engine that checks real-time doctor
+                  slot availability in MySQL to prevent double-bookings, plus an automated billing generator.</p>
+              </div>
+
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Smart calendar that automatically checks doctor availability to prevent double-booking.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Automated billing generator that creates invoices and tracks clinic revenue.</span>
+                </li>
+              </ul>
+              <div class="project-takeaway">
+                <span class="takeaway-label mono">// HARDEST BUG SOLVED:</span>
+                Prevented double-booking conflicts when two receptionists tried reserving the exact same appointment
+                slot at the same second.
+              </div>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Invoicing</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-modal-btn" data-open-modal="sports-science-engine">
+                    <span>Architecture Details &rarr;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Hostel Operations & Resident Allocation Platform (Differentiated) -->
+          <article class="project-card" data-category="fullstack systems">
+            <div class="project-media-wrap">
+              <img src="assets/images/hostel_rbac_platform.jpg" alt="Hostel Operations & Resident Allocation Platform"
+                class="project-img" loading="lazy">
+              <span class="project-overlay-badge">Next.js • Supabase • PostgreSQL</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Hostel Room Booking &amp; Gate Pass System</h3>
+              <p class="project-desc">
+                An automated web portal that assigns incoming student athletes to hostel rooms and generates digital
+                entry gate passes.
+              </p>
+
+              <!-- Standard Stack Breakdown -->
+              <div class="project-stack-breakdown">
+                <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">Next.js (App
+                    Router), Tailwind CSS</span></div>
+                <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">Node.js &amp;
+                    Database Triggers</span></div>
+                <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">PostgreSQL
+                    (Supabase)</span></div>
+              </div>
+
+              <div class="how-it-works">
+                <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
+                <p class="how-it-works-text">Next.js housing checkout connected to PostgreSQL database rules that
+                  atomically check vacant beds before saving reservations, automatically producing QR-coded digital gate
+                  passes.</p>
+              </div>
+
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Database rules automatically verify room capacity before confirming check-in, preventing
+                    overcrowded rooms.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Custom dashboard views tailored for students, hostel wardens, and fee accountants.</span>
+                </li>
+              </ul>
+              <div class="project-takeaway">
+                <span class="takeaway-label mono">// KEY TAKEAWAY:</span>
+                Replaced manual room tracking with automatic database checks, completely eliminating overbooked rooms
+                and room assignment errors.
+              </div>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">Supabase</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">Database Rules</span>
+                </div>
+                <div class="project-actions">
+                  <button class="project-modal-btn" data-open-modal="hostel-management-system">
+                    <span>Architecture Details &rarr;</span>
+                  </button>
+                  <button class="btn-demo" data-open-demo="hostel">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <span>Try Allocation Simulator</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Molecular Analysis & Drug Discovery Pipeline -->
+          <article class="project-card" data-category="data-ml">
+            <div class="project-media-wrap">
+              <img src="assets/images/molecular_drug_discovery.jpg" alt="Molecular Structure Analysis & Drug Discovery"
+                class="project-img" loading="lazy">
+              <span class="project-overlay-badge">Python • RDKit • DGL-LifeSci</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Medicine Discovery &amp; Data Analysis Pipeline</h3>
+              <p class="project-desc">
+                A Python data science project that analyzes chemical structures of medicines to predict how effectively
+                they respond in clinical testing.
+              </p>
+
+              <!-- Standard Stack Breakdown -->
+              <div class="project-stack-breakdown">
+                <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">Streamlit /
+                    Python Web Dashboard</span></div>
+                <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">Python (RDKit,
+                    Scikit-learn, PyTorch)</span></div>
+                <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">ChEMBL &amp;
+                    PubChem Datasets (CSV)</span></div>
+              </div>
+
+              <div class="how-it-works">
+                <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
+                <p class="how-it-works-text">Data pipeline that parses raw molecular SMILES formulas, extracts chemical
+                  fingerprints, and trains machine learning algorithms to predict cellular response with high accuracy.
                 </p>
+              </div>
 
-                <!-- Standard Stack Breakdown -->
-                <div class="project-stack-breakdown">
-                  <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">React 18
-                      &amp;
-                      Vite</span></div>
-                  <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">PHP REST
-                      API</span></div>
-                  <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">MySQL</span>
-                  </div>
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Cleaned and combined large chemical datasets from open scientific libraries (PubChem and
+                    ChEMBL).</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Trained machine learning models in Python to predict drug effectiveness scores.</span>
+                </li>
+              </ul>
+              <div class="project-takeaway">
+                <span class="takeaway-label mono">// HARDEST BUG SOLVED:</span>
+                Cleaned messy chemical data and missing records to ensure the machine learning model remained accurate.
+              </div>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">RDKit</span>
+                  <span class="tech-tag">Data Cleaning</span>
+                  <span class="tech-tag">ML Models</span>
                 </div>
-
-                <div class="how-it-works">
-                  <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
-                  <p class="how-it-works-text">Fast React frontend bundled with Vite for sub-second page loads,
-                    connected
-                    to a PHP API that validates user inputs and securely stores consultation requests in MySQL.</p>
-                </div>
-
-                <ul class="project-highlights-list">
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Built with React and Vite so pages load instantly on both mobile phones and laptops.</span>
-                  </li>
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Connected a PHP and MySQL backend with safe database queries to protect patient inquiries from
-                      spam and errors.</span>
-                  </li>
-                </ul>
-                <div class="project-takeaway">
-                  <span class="takeaway-label mono">// HARDEST BUG SOLVED:</span>
-                  Fixed a live-server connectivity issue where contact forms failed to save due to mismatched
-                  database configuration settings.
-                </div>
-                <div class="project-footer">
-                  <div class="tech-tags">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Vite</span>
-                    <span class="tech-tag">PHP</span>
-                    <span class="tech-tag">MySQL</span>
-                  </div>
-                  <div class="project-actions">
-                    <button class="project-modal-btn" data-open-modal="sports-science-website">
-                      <span>Architecture Details &rarr;</span>
-                    </button>
+                <div class="project-actions">
+                  <button class="project-modal-btn" data-open-modal="molecular-drug-discovery">
+                    <span>Architecture Details &rarr;</span>
+                  </button>
+                  <div class="project-external-links">
+                    <a href="https://github.com/Chanthani-N-R-31" target="_blank" rel="noopener noreferrer"
+                      class="project-ext-link" title="View Source on GitHub">
+                      <span>GitHub Repo &nearr;</span>
+                    </a>
                   </div>
                 </div>
               </div>
-            </article>
+            </div>
+          </article>
 
-            <!-- Project 2: Sports Science Engine -->
-            <article class="project-card" data-category="fullstack healthcare systems">
-              <div class="project-media-wrap">
-                <img src="assets/images/sports_science_dashboard.jpg" alt="Sports Science Engine & Scheduler"
-                  class="project-img" loading="lazy">
-                <span class="project-overlay-badge">Next.js • JavaScript • MySQL</span>
+          <!-- Project 5: Student Facial Recognition Attendance (CNN) -->
+          <article class="project-card" data-category="ai-cv fullstack">
+            <div class="project-media-wrap">
+              <img src="assets/images/sports_science_portal.jpg"
+                alt="Student Facial Recognition & Attendance System using CNN" class="project-img" loading="lazy">
+              <span class="project-overlay-badge">Python • OpenCV • CNN Camera AI</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Face Recognition Attendance Scanner</h3>
+              <p class="project-desc">
+                A contactless attendance system using camera vision to recognize student faces and mark them present in
+                under 3 seconds.
+              </p>
+
+              <!-- Standard Stack Breakdown -->
+              <div class="project-stack-breakdown">
+                <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">HTML5 Web
+                    Camera &amp; Tailwind CSS</span></div>
+                <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">Python (OpenCV
+                    &amp; Deep Learning CNN)</span></div>
+                <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">SQLite /
+                    PostgreSQL</span></div>
               </div>
-              <div class="project-body">
-                <h3 class="project-title">Clinic Operations &amp; Doctor Scheduler</h3>
-                <p class="project-desc">
-                  An all-in-one clinic management tool to manage doctor calendars, medical inventory, and patient
-                  billing
-                  without paperwork.
-                </p>
 
-                <!-- Standard Stack Breakdown -->
-                <div class="project-stack-breakdown">
-                  <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">Next.js 14
-                      &amp; React</span></div>
-                  <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">Node.js
-                      Calendar
-                      Engine</span></div>
-                  <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">MySQL</span>
-                  </div>
-                </div>
-
-                <div class="how-it-works">
-                  <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
-                  <p class="how-it-works-text">Next.js dashboard with a smart calendar engine that checks real-time
-                    doctor
-                    slot availability in MySQL to prevent double-bookings, plus an automated billing generator.</p>
-                </div>
-
-                <ul class="project-highlights-list">
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Smart calendar that automatically checks doctor availability to prevent double-booking.</span>
-                  </li>
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Automated billing generator that creates invoices and tracks clinic revenue.</span>
-                  </li>
-                </ul>
-                <div class="project-takeaway">
-                  <span class="takeaway-label mono">// HARDEST BUG SOLVED:</span>
-                  Prevented double-booking conflicts when two receptionists tried reserving the exact same appointment
-                  slot at the same second.
-                </div>
-                <div class="project-footer">
-                  <div class="tech-tags">
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">MySQL</span>
-                    <span class="tech-tag">Invoicing</span>
-                  </div>
-                  <div class="project-actions">
-                    <button class="project-modal-btn" data-open-modal="sports-science-engine">
-                      <span>Architecture Details &rarr;</span>
-                    </button>
-                  </div>
-                </div>
+              <div class="how-it-works">
+                <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
+                <p class="how-it-works-text">Live video stream processed by a Convolutional Neural Network (CNN) that
+                  extracts face landmarks, matches against enrolled student photos, and logs attendance records
+                  automatically.</p>
               </div>
-            </article>
 
-            <!-- Project 3: Hostel Operations & Resident Allocation Platform (Differentiated) -->
-            <article class="project-card" data-category="fullstack systems">
-              <div class="project-media-wrap">
-                <img src="assets/images/hostel_rbac_platform.jpg" alt="Hostel Operations & Resident Allocation Platform"
-                  class="project-img" loading="lazy">
-                <span class="project-overlay-badge">Next.js • Supabase • PostgreSQL</span>
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Uses OpenCV and Python to spot faces on camera and match them against student photos.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Saves teachers 15 to 20 minutes of manual morning roll-call time every day.</span>
+                </li>
+              </ul>
+              <div class="project-takeaway">
+                <span class="takeaway-label mono">// HARDEST BUG SOLVED:</span>
+                Adjusted camera filters so students are recognized accurately even under dim or uneven hallway lighting.
               </div>
-              <div class="project-body">
-                <h3 class="project-title">Hostel Room Booking &amp; Gate Pass System</h3>
-                <p class="project-desc">
-                  An automated web portal that assigns incoming student athletes to hostel rooms and generates digital
-                  entry gate passes.
-                </p>
-
-                <!-- Standard Stack Breakdown -->
-                <div class="project-stack-breakdown">
-                  <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">Next.js (App
-                      Router), Tailwind CSS</span></div>
-                  <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">Node.js &amp;
-                      Database Triggers</span></div>
-                  <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">PostgreSQL
-                      (Supabase)</span></div>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">OpenCV</span>
+                  <span class="tech-tag">Camera AI</span>
+                  <span class="tech-tag">SQLite</span>
                 </div>
-
-                <div class="how-it-works">
-                  <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
-                  <p class="how-it-works-text">Next.js housing checkout connected to PostgreSQL database rules that
-                    atomically check vacant beds before saving reservations, automatically producing QR-coded digital
-                    gate
-                    passes.</p>
-                </div>
-
-                <ul class="project-highlights-list">
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
+                <div class="project-actions">
+                  <button class="project-modal-btn" data-open-modal="cnn-attendance-scanner">
+                    <span>Architecture Details &rarr;</span>
+                  </button>
+                  <button class="btn-demo" data-open-demo="cnn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                     </svg>
-                    <span>Database rules automatically verify room capacity before confirming check-in, preventing
-                      overcrowded rooms.</span>
-                  </li>
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Custom dashboard views tailored for students, hostel wardens, and fee accountants.</span>
-                  </li>
-                </ul>
-                <div class="project-takeaway">
-                  <span class="takeaway-label mono">// KEY TAKEAWAY:</span>
-                  Replaced manual room tracking with automatic database checks, completely eliminating overbooked rooms
-                  and room assignment errors.
-                </div>
-                <div class="project-footer">
-                  <div class="tech-tags">
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">Supabase</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">Database Rules</span>
-                  </div>
-                  <div class="project-actions">
-                    <button class="project-modal-btn" data-open-modal="hostel-management-system">
-                      <span>Architecture Details &rarr;</span>
-                    </button>
-                    <button class="btn-demo" data-open-demo="hostel">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2.5">
-                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                      </svg>
-                      <span>Try Allocation Simulator</span>
-                    </button>
-                  </div>
+                    <span>Launch Face Scanner Demo</span>
+                  </button>
                 </div>
               </div>
-            </article>
+            </div>
+          </article>
 
-            <!-- Project 4: Molecular Analysis & Drug Discovery Pipeline -->
-            <article class="project-card" data-category="data-ml">
-              <div class="project-media-wrap">
-                <img src="assets/images/molecular_drug_discovery.jpg"
-                  alt="Molecular Structure Analysis & Drug Discovery" class="project-img" loading="lazy">
-                <span class="project-overlay-badge">Python • RDKit • DGL-LifeSci</span>
+          <!-- Project 6: Python to Flowchart Generator (AST Engine) -->
+          <article class="project-card" data-category="systems fullstack">
+            <div class="project-media-wrap">
+              <img src="assets/images/sports_science_dashboard.jpg" alt="Python to Flowchart Generator using AST"
+                class="project-img" loading="lazy">
+              <span class="project-overlay-badge">Python • Code Parser • Visual SVG</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Python Code-to-Flowchart Generator</h3>
+              <p class="project-desc">
+                A developer tool that reads Python code and automatically turns it into an easy-to-read visual flowchart
+                diagram.
+              </p>
+
+              <!-- Standard Stack Breakdown -->
+              <div class="project-stack-breakdown">
+                <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">Vanilla
+                    JavaScript &amp; Scalable Vector SVG</span></div>
+                <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">Python AST
+                    Tokenizer &amp; Parser</span></div>
+                <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">In-Memory
+                    Abstract Syntax Tree (Client-Side)</span></div>
               </div>
-              <div class="project-body">
-                <h3 class="project-title">Medicine Discovery &amp; Data Analysis Pipeline</h3>
-                <p class="project-desc">
-                  A Python data science project that analyzes chemical structures of medicines to predict how
-                  effectively
-                  they respond in clinical testing.
-                </p>
 
-                <!-- Standard Stack Breakdown -->
-                <div class="project-stack-breakdown">
-                  <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">Streamlit /
-                      Python Web Dashboard</span></div>
-                  <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">Python (RDKit,
-                      Scikit-learn, PyTorch)</span></div>
-                  <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">ChEMBL &amp;
-                      PubChem Datasets (CSV)</span></div>
+              <div class="how-it-works">
+                <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
+                <p class="how-it-works-text">Parses Python syntax line-by-line, identifies functions, loops, and if-else
+                  branches, and calculates vector coordinates to draw a directed flowchart with zero server latency.</p>
+              </div>
+
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Scans code functions, if/else conditions, and loops to map out logic step by step.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Draws clean vector diagrams with decision boxes, True/False branches, and directional
+                    arrows.</span>
+                </li>
+              </ul>
+              <div class="project-takeaway">
+                <span class="takeaway-label mono">// HARDEST BUG SOLVED:</span>
+                Fixed overlapping arrows when code had multiple nested loops so diagrams stay clean and readable.
+              </div>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Code Parser</span>
+                  <span class="tech-tag">SVG Diagrams</span>
+                  <span class="tech-tag">Algorithms</span>
                 </div>
-
-                <div class="how-it-works">
-                  <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
-                  <p class="how-it-works-text">Data pipeline that parses raw molecular SMILES formulas, extracts
-                    chemical
-                    fingerprints, and trains machine learning algorithms to predict cellular response with high
-                    accuracy.
-                  </p>
-                </div>
-
-                <ul class="project-highlights-list">
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
+                <div class="project-actions">
+                  <button class="project-modal-btn" data-open-modal="python-flowchart-generator">
+                    <span>Architecture Details &rarr;</span>
+                  </button>
+                  <button class="btn-demo" data-open-demo="flowchart">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                     </svg>
-                    <span>Cleaned and combined large chemical datasets from open scientific libraries (PubChem and
-                      ChEMBL).</span>
-                  </li>
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Trained machine learning models in Python to predict drug effectiveness scores.</span>
-                  </li>
-                </ul>
-                <div class="project-takeaway">
-                  <span class="takeaway-label mono">// HARDEST BUG SOLVED:</span>
-                  Cleaned messy chemical data and missing records to ensure the machine learning model remained
-                  accurate.
-                </div>
-                <div class="project-footer">
-                  <div class="tech-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">RDKit</span>
-                    <span class="tech-tag">Data Cleaning</span>
-                    <span class="tech-tag">ML Models</span>
-                  </div>
-                  <div class="project-actions">
-                    <button class="project-modal-btn" data-open-modal="molecular-drug-discovery">
-                      <span>Architecture Details &rarr;</span>
-                    </button>
-                    <div class="project-external-links">
-                      <a href="https://github.com/Chanthani-N-R-31" target="_blank" rel="noopener noreferrer"
-                        class="project-ext-link" title="View Source on GitHub">
-                        <span>GitHub Repo &nearr;</span>
-                      </a>
-                    </div>
-                  </div>
+                    <span>Open Code-to-Flowchart Lab</span>
+                  </button>
                 </div>
               </div>
-            </article>
+            </div>
+          </article>
 
-            <!-- Project 5: Student Facial Recognition Attendance (CNN) -->
-            <article class="project-card" data-category="ai-cv fullstack">
-              <div class="project-media-wrap">
-                <img src="assets/images/sports_science_portal.jpg"
-                  alt="Student Facial Recognition & Attendance System using CNN" class="project-img" loading="lazy">
-                <span class="project-overlay-badge">Python • OpenCV • CNN Camera AI</span>
+          <!-- Project 7: Workforce Attendance & Shift Policy Engine (In-Office & OD) -->
+          <!-- Project 7: Employee Attendance & GPS Geofencing Portal -->
+          <article class="project-card" data-category="systems healthcare">
+            <div class="project-media-wrap">
+              <img src="assets/images/sports_science_dashboard.jpg"
+                alt="Employee Attendance & Geofenced Check-In Portal" class="project-img" loading="lazy">
+              <span class="project-overlay-badge">PHP • MySQL • GPS Geofencing • Staff Login</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Employee Attendance Portal with GPS Geofencing (Check-In &amp; Check-Out)</h3>
+              <p class="project-desc">
+                A self-service staff portal where employees log in from their own accounts to check in and check out.
+                Uses device GPS (latitude &amp; longitude) to verify staff are physically inside the 100m office
+                geofence before approving an in-office punch.
+              </p>
+
+              <!-- Standard Stack Breakdown -->
+              <div class="project-stack-breakdown">
+                <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">HTML5, CSS3,
+                    JavaScript (Geolocation API &amp; Self-Service Login)</span></div>
+                <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">PHP Geofence
+                    Distance Calculator &amp; Shift Policy Rules</span></div>
+                <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">MySQL
+                    Attendance Ledger (Coordinates, Timestamps &amp; Approvals)</span></div>
               </div>
-              <div class="project-body">
-                <h3 class="project-title">Face Recognition Attendance Scanner</h3>
-                <p class="project-desc">
-                  A contactless attendance system using camera vision to recognize student faces and mark them present
-                  in
-                  under 3 seconds.
-                </p>
 
-                <!-- Standard Stack Breakdown -->
-                <div class="project-stack-breakdown">
-                  <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">HTML5 Web
-                      Camera &amp; Tailwind CSS</span></div>
-                  <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">Python (OpenCV
-                      &amp; Deep Learning CNN)</span></div>
-                  <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">SQLite /
-                      PostgreSQL</span></div>
-                </div>
-
-                <div class="how-it-works">
-                  <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
-                  <p class="how-it-works-text">Live video stream processed by a Convolutional Neural Network (CNN) that
-                    extracts face landmarks, matches against enrolled student photos, and logs attendance records
-                    automatically.</p>
-                </div>
-
-                <ul class="project-highlights-list">
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Uses OpenCV and Python to spot faces on camera and match them against student photos.</span>
-                  </li>
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Saves teachers 15 to 20 minutes of manual morning roll-call time every day.</span>
-                  </li>
-                </ul>
-                <div class="project-takeaway">
-                  <span class="takeaway-label mono">// HARDEST BUG SOLVED:</span>
-                  Adjusted camera filters so students are recognized accurately even under dim or uneven hallway
-                  lighting.
-                </div>
-                <div class="project-footer">
-                  <div class="tech-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">OpenCV</span>
-                    <span class="tech-tag">Camera AI</span>
-                    <span class="tech-tag">SQLite</span>
-                  </div>
-                  <div class="project-actions">
-                    <button class="project-modal-btn" data-open-modal="cnn-attendance-scanner">
-                      <span>Architecture Details &rarr;</span>
-                    </button>
-                    <button class="btn-demo" data-open-demo="cnn">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2.5">
-                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                      </svg>
-                      <span>Launch Face Scanner Demo</span>
-                    </button>
-                  </div>
-                </div>
+              <div class="how-it-works">
+                <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
+                <p class="how-it-works-text">Staff authenticate with their personal login to submit check-in and
+                  check-out punches. The frontend requests device latitude and longitude via the browser Geolocation
+                  API; the backend calculates distance from office coordinates (Haversine formula), validates the 100m
+                  geofence radius, and commits verified punches to MySQL.</p>
               </div>
-            </article>
 
-            <!-- Project 6: Python to Flowchart Generator (AST Engine) -->
-            <article class="project-card" data-category="systems fullstack">
-              <div class="project-media-wrap">
-                <img src="assets/images/sports_science_dashboard.jpg" alt="Python to Flowchart Generator using AST"
-                  class="project-img" loading="lazy">
-                <span class="project-overlay-badge">Python • Code Parser • Visual SVG</span>
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Self-service employee login allowing staff to record check-in and check-out punches securely
+                    from their own devices.</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>GPS geofencing checks live latitude and longitude to verify physical presence inside the 100m
+                    office perimeter.</span>
+                </li>
+              </ul>
+              <div class="project-takeaway">
+                <span class="takeaway-label mono">// HARDEST BUG SOLVED:</span>
+                Handled indoor GPS drift and erratic mobile browser coordinates by building an accuracy tolerance filter
+                and a 100-meter geofence buffer to prevent false out-of-office rejections.
               </div>
-              <div class="project-body">
-                <h3 class="project-title">Python Code-to-Flowchart Generator</h3>
-                <p class="project-desc">
-                  A developer tool that reads Python code and automatically turns it into an easy-to-read visual
-                  flowchart
-                  diagram.
-                </p>
-
-                <!-- Standard Stack Breakdown -->
-                <div class="project-stack-breakdown">
-                  <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">Vanilla
-                      JavaScript &amp; Scalable Vector SVG</span></div>
-                  <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">Python AST
-                      Tokenizer &amp; Parser</span></div>
-                  <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">In-Memory
-                      Abstract Syntax Tree (Client-Side)</span></div>
+              <div class="project-footer">
+                <div class="tech-tags">
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">GPS Geofencing</span>
+                  <span class="tech-tag">Lat &amp; Long</span>
+                  <span class="tech-tag">Staff Login</span>
+                  <span class="tech-tag">Check-In / Out</span>
                 </div>
-
-                <div class="how-it-works">
-                  <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
-                  <p class="how-it-works-text">Parses Python syntax line-by-line, identifies functions, loops, and
-                    if-else
-                    branches, and calculates vector coordinates to draw a directed flowchart with zero server latency.
-                  </p>
-                </div>
-
-                <ul class="project-highlights-list">
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
+                <div class="project-actions">
+                  <button class="project-modal-btn" data-open-modal="workforce-attendance-engine">
+                    <span>Architecture Details &rarr;</span>
+                  </button>
+                  <button class="btn-demo" data-open-demo="workforce">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                     </svg>
-                    <span>Scans code functions, if/else conditions, and loops to map out logic step by step.</span>
-                  </li>
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Draws clean vector diagrams with decision boxes, True/False branches, and directional
-                      arrows.</span>
-                  </li>
-                </ul>
-                <div class="project-takeaway">
-                  <span class="takeaway-label mono">// HARDEST BUG SOLVED:</span>
-                  Fixed overlapping arrows when code had multiple nested loops so diagrams stay clean and readable.
-                </div>
-                <div class="project-footer">
-                  <div class="tech-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Code Parser</span>
-                    <span class="tech-tag">SVG Diagrams</span>
-                    <span class="tech-tag">Algorithms</span>
-                  </div>
-                  <div class="project-actions">
-                    <button class="project-modal-btn" data-open-modal="python-flowchart-generator">
-                      <span>Architecture Details &rarr;</span>
-                    </button>
-                    <button class="btn-demo" data-open-demo="flowchart">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2.5">
-                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                      </svg>
-                      <span>Open Code-to-Flowchart Lab</span>
-                    </button>
-                  </div>
+                    <span>Test Geofence &amp; Login Demo</span>
+                  </button>
                 </div>
               </div>
-            </article>
-
-            <!-- Project 7: Workforce Attendance & Shift Policy Engine (In-Office & OD) -->
-            <!-- Project 7: Employee Attendance & GPS Geofencing Portal -->
-            <article class="project-card" data-category="systems healthcare">
-              <div class="project-media-wrap">
-                <img src="assets/images/sports_science_dashboard.jpg"
-                  alt="Employee Attendance & Geofenced Check-In Portal" class="project-img" loading="lazy">
-                <span class="project-overlay-badge">PHP • MySQL • GPS Geofencing • Staff Login</span>
-              </div>
-              <div class="project-body">
-                <h3 class="project-title">Employee Attendance Portal with GPS Geofencing (Check-In &amp; Check-Out)</h3>
-                <p class="project-desc">
-                  A self-service staff portal where employees log in from their own accounts to check in and check out.
-                  Uses device GPS (latitude &amp; longitude) to verify staff are physically inside the 100m office
-                  geofence before approving an in-office punch.
-                </p>
-
-                <!-- Standard Stack Breakdown -->
-                <div class="project-stack-breakdown">
-                  <div class="stack-row"><span class="stack-k mono">FRONTEND:</span> <span class="stack-v">HTML5, CSS3,
-                      JavaScript (Geolocation API &amp; Self-Service Login)</span></div>
-                  <div class="stack-row"><span class="stack-k mono">BACKEND:</span> <span class="stack-v">PHP Geofence
-                      Distance Calculator &amp; Shift Policy Rules</span></div>
-                  <div class="stack-row"><span class="stack-k mono">DATABASE:</span> <span class="stack-v">MySQL
-                      Attendance Ledger (Coordinates, Timestamps &amp; Approvals)</span></div>
-                </div>
-
-                <div class="how-it-works">
-                  <span class="how-it-works-label mono">// HOW IT WAS BUILT:</span>
-                  <p class="how-it-works-text">Staff authenticate with their personal login to submit check-in and
-                    check-out punches. The frontend requests device latitude and longitude via the browser Geolocation
-                    API; the backend calculates distance from office coordinates (Haversine formula), validates the 100m
-                    geofence radius, and commits verified punches to MySQL.</p>
-                </div>
-
-                <ul class="project-highlights-list">
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Self-service employee login allowing staff to record check-in and check-out punches securely
-                      from their own devices.</span>
-                  </li>
-                  <li class="project-highlight-item">
-                    <svg viewBox="0 0 24 24" fill="none">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>GPS geofencing checks live latitude and longitude to verify physical presence inside the 100m
-                      office perimeter.</span>
-                  </li>
-                </ul>
-                <div class="project-takeaway">
-                  <span class="takeaway-label mono">// HARDEST BUG SOLVED:</span>
-                  Handled indoor GPS drift and erratic mobile browser coordinates by building an accuracy tolerance
-                  filter
-                  and a 100-meter geofence buffer to prevent false out-of-office rejections.
-                </div>
-                <div class="project-footer">
-                  <div class="tech-tags">
-                    <span class="tech-tag">PHP</span>
-                    <span class="tech-tag">MySQL</span>
-                    <span class="tech-tag">GPS Geofencing</span>
-                    <span class="tech-tag">Lat &amp; Long</span>
-                    <span class="tech-tag">Staff Login</span>
-                    <span class="tech-tag">Check-In / Out</span>
-                  </div>
-                  <div class="project-actions">
-                    <button class="project-modal-btn" data-open-modal="workforce-attendance-engine">
-                      <span>Architecture Details &rarr;</span>
-                    </button>
-                    <button class="btn-demo" data-open-demo="workforce">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2.5">
-                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                      </svg>
-                      <span>Test Geofence &amp; Login Demo</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </article>
+            </div>
+          </article>
           </div>
         </div>
 
